@@ -1,0 +1,13 @@
+:root {
+ /*Colors, Transparency*/
+    --background-color: #F9F9F9; /*#E5E5E5*/
+    --copy-text-color: #3F3F3F;
+};
+
+/* Container
+CSS Grid
+*/
+
+.container {
+	display: grid;
+}
