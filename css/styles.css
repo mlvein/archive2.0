@@ -24,6 +24,8 @@ CSS Grid
   
   .header {
 	grid-area: header;
+	background-color: #F9F9F9;
+	border: 1px solid #3F3F3F;
   }
 
   .col1 {
