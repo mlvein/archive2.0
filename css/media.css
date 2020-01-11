@@ -362,7 +362,7 @@
                 font-weight: var(--body-weight);
                 line-height: var(--body-line-height);
                 letter-spacing: var(--body-spacing);
-                padding: 4px;
+                padding: 4px 4px 4px 0;
             }
 
                 .resource-grid>ul>li::before {
@@ -383,9 +383,11 @@
             .resource-grid>ul>li>a:hover {
                 color:#0074B9;
                 background-image: -webkit-linear-gradient(45deg, #0074B9, #feab3a);
+                background-clip: text;
                 -webkit-background-clip: text;
 	            -webkit-text-fill-color: transparent;
-	            -webkit-animation: hue 10s infinite linear;
+                animation: hue 10s infinite linear;
+                -webkit-animation: hue 10s infinite linear;
                 font-weight: 600;
                 text-transform: uppercase;
             }
@@ -399,9 +401,6 @@
         top: 40px;
         position: relative;
         grid-row-end: span 2;
-        &:nth-child(odd) {
-            background-color: #424242;
-        }
     }
     
     .span-wide {
