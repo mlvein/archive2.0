@@ -5,7 +5,7 @@ document.addEventListener("keyup",function(e){
 	switch(key){
 	// 1
 	case 49:
-        window.location.href = "index";
+        window.location.href = "https://www.melvinalvarez.com/";
 	break;
 	//2
 	case 50:
