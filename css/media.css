@@ -376,7 +376,7 @@
                 color: var(--darkgray);
                 text-decoration: none;
                 transition: 500ms color;
-                font-weight: 100;
+                font-weight: 600;
             }
 
             .about-list>ul>li>a:hover,

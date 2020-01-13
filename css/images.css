@@ -1,80 +1,116 @@
+/**lazyload**/
+
+.lazy {
+    background-image: none;
+}
+
+.loaded {
+    animation: reveal .5s ease-in;
+}
+
+.image-hold {
+    animation: slow-reveal .5s ease-in;
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slow-reveal {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 /*
 Masonry Gallery Images
 */
 
-.threeSixDays_2 {
+#threeSixDays_2 {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573618028/36days_2_nyxhl9.gif');
 }
 
-.threeSixDays_z {
+#threeSixDays_z {
     background-image: url('https://storage.googleapis.com/melvin-images/imgs/36days04_z_03.gif');
 }
 
-.threeSixDays_header {
+#threeSixDays_header {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573654869/36days_header.gif')
 }
 
-.status_principles {
+#status_principles {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209992/status_principles.jpg');
 }
 
-.doThing2 {
+#doThing2 {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209989/doThing_j3ib18.jpg');
 }
 
-.kiosked {
+#kiosked {
     background-image: url('https://storage.googleapis.com/melvin-images/imgs/proj-kiosked.jpg');
 }
 
-.switchdex_ui {
+#switchdex_ui {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209997/switchdex_v1.jpg');
 }
 
-.switchdex_ui_v2 {
+#switchdex_ui_v2 {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1577595226/switchdex-ui-v2.jpg');
 }
 
-.vac_ui {
+#vac_ui {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1577634449/vac_ui.jpg');
 }
 
-.blockchainbrief {
+#blockchainbrief {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209985/blockchain_brief.jpg');
 }
 
-.outclicks {
+#outclicks {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209990/outclicks.jpg');
 }
 
-.raccoon_suck {
+#raccoon_suck {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209996/raccoon_suck_x6obkq.gif');
 }
 
-.kiosked_illustration {
+#kiosked_illustration {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209987/kiosked_illustration.jpg');
 }
 
-.dialpad_illus1 {
+#dialpad_illus1 {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209984/dialpad_deskphone.jpg');
 }
 
-.dialpad_illus2 {
+#dialpad_illus2 {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209984/dialpad_security.gif');
 }
 
-.dialpad_highfive {
+#dialpad_highfive {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209983/dialpad_highfive.gif');
 }
 
-.kimmy {
+#kimmy {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573210001/kimmy.gif');
 }
 
-.limewire {
+#limewire {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209993/limewire_logo.jpg')
 }
 
-.bandsinbathroom {
+#bandsinbathroom {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209984/bandsinyourbathroom.jpg');
 }
 
@@ -82,10 +118,10 @@ Masonry Gallery Images
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209986/melvin_alvarez_uphsnu.jpg');
 }
 
-.oblique {
+#oblique {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209989/oblique_kqug8l.gif');
 }
 
-.dark_room {
+#dark_room {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209985/darkroom_bw5vms.jpg');
 }
