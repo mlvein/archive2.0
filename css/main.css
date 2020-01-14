@@ -26,6 +26,7 @@
 html {
     height: 100%;
     overflow: scroll;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -85,7 +86,7 @@ body {
 
     #resourceGrid,        
     #masonryGrid{
-        width: 860px;
+        width: 84%;
         height: 100%;
         margin: 0 auto;
         overflow: scroll;
@@ -96,6 +97,10 @@ body {
         grid-auto-rows: minmax(180px, auto);
         grid-auto-flow: dense;
         margin-top: 100px;
+    }
+
+    .about-grid {
+        padding: 0 0 0 0;
     }
 
     .resource-grid {
@@ -132,6 +137,7 @@ body {
         .span-about {
             grid-column-end: span 2;
             grid-row-end: span 2;
+            padding: 0 0 40px 0;
         }
     
             .span-about>h6 {

@@ -1,6 +1,5 @@
 
-
-@media screen and (min-width: 700px) and (max-width: 1199px){
+@media only screen and (min-width: 700px) and (max-width: 1199px){
 
     .container{
         margin-top: -10px;
@@ -45,9 +44,24 @@
         padding: 10px;
     }
 
+        .about-grid {
+            padding: 40px 0 0 0;
+        } 
+
         #masonryGrid {
             margin-top: 40px;
         }
+
+        .span-wide {
+            grid-column-end: span 2;
+            grid-row-end: span 2;
+        }
+        
+        .span-long {
+            grid-column-end: span 1;
+            grid-row-end: span 4;
+        }
+    
    
    #sideBar{
        display: none;
@@ -58,7 +72,7 @@
 
 } 
 
-@media screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px){
 
     html {
         overflow: hidden;
@@ -265,6 +279,10 @@
         padding: 10px;
     }
 
+    .about-grid {
+        padding: 40px 0 0 0;
+    } 
+
     #masonryGrid {
         margin-top: 10px;
     }
@@ -437,6 +455,7 @@
     .span-about {
         grid-column-end: span 2;
         grid-row-end: span 2;
+        padding: 40px 0 40px 0;
     }
 
         .span-about>h6 {

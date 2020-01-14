@@ -12,6 +12,14 @@
     animation: slow-reveal .5s ease-in;
 }
 
+/*hold image-hold*/
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
 @keyframes reveal {
     0% {
         opacity: 0;
@@ -50,12 +58,20 @@ Masonry Gallery Images
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573654869/36days_header.gif')
 }
 
+#vac_logo {
+    background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1578989846/vac_logo.jpg');
+}
+
 #status_principles {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209992/status_principles.jpg');
 }
 
 #doThing2 {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209989/doThing_j3ib18.jpg');
+}
+
+#apollo {
+    background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573636269/apollo.gif');
 }
 
 #kiosked {
@@ -124,4 +140,12 @@ Masonry Gallery Images
 
 #dark_room {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209985/darkroom_bw5vms.jpg');
+}
+
+#floodkit {
+    background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1579014435/floodkit.gif');
+}
+
+#nolfam {
+    background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573209993/nolfam.jpg');
 }
