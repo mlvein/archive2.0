@@ -45,11 +45,11 @@
     }
 
         .about-grid {
-            padding: 40px 0 0 0;
+            padding: 20px 0 0 0;
         } 
 
         #masonryGrid {
-            margin-top: 40px;
+            margin-top: 0px;
         }
 
         .span-wide {
@@ -276,15 +276,15 @@
         grid-gap: 10px;
         grid-auto-rows: minmax(180px, auto);
         grid-auto-flow: dense;
-        padding: 10px;
+        /* padding: 10px; */
     }
 
     .about-grid {
-        padding: 40px 0 0 0;
+        padding: 20px 0 0 0;
     } 
 
     #masonryGrid {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     #resourceGrid {
