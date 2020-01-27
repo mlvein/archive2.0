@@ -1,4 +1,11 @@
-//lazyload
+// var img = document.querySelectorAll(".image-hold");
+// document.body.classList.add('js-loading');
+// img.addEventListener("load", removeLoadingClass);
+// function removeLoadingClass() {
+//   document.body.classList.remove('js-loading');
+// }
+
+//lazyload css background-image
 
 document.addEventListener("DOMContentLoaded", function() {
 	var lazyloadImages;    
