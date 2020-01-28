@@ -78,19 +78,14 @@
         </header>
 
         <div id="mobileHeader">
-            <div id="menuToggle">
-                <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul id="menu">
-                    <a href="#"><li>works</li></a>
-                    <a href="#"><li>about</li></a>
-                    <a href="#"><li>process</li></a>
-                    <a href="#"><li>resources</li></a>
-                    <a href="#"><li>shop</li></a>
-                </ul>
-            </div>
+            <p>
+                This is an archive of the works of Melvin Alvarez
+            </p>
+            <button class="hamburger hamburger--elastic" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>  
         </div>
     
         <div id="masonryGrid">
@@ -159,6 +154,14 @@
         function scrollToTop() {
             elmnt.scrollIntoView({behavior:'smooth'});
         }
+
+    var hamburger = document.querySelector(".hamburger");
+    // On click
+    hamburger.addEventListener("click", function() {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+        // Do something else, like open/close menu
+    });
 
 </script>
 <script src='js/anime.min.js'></script>
