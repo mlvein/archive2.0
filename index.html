@@ -72,25 +72,39 @@
                 <a href="https://twitter.com/_melvinalvarez">twitter</a>, or
                 send me an
                 <a href="mailto:alvarezmelvin@me.com?subject=Hey Melvin!"  >email</a> 
-                <br/><br/><br/><br/><br/><br/><br/>
-                <span class="side-note">Currently still tinkering around... apologies if some of the pages are disabled. <i>(I'm a slow coder)</i> 😅</span>
             </p>
         </header>
 
-        <div id="mobileHeader">
-            <div id="menuToggle">
-                <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul id="menu">
-                    <a href="#"><li>works</li></a>
-                    <a href="#"><li>about</li></a>
-                    <a href="#"><li>process</li></a>
-                    <a href="#"><li>resources</li></a>
-                    <a href="#"><li>shop</li></a>
+        <div id="mobileHeader" class="collapse-header">
+            <p>
+                Melvin Alvarez </br>
+                <span class="mobile-line works"></span> 
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                <span style="color:#0074B9;
+                background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: hue 10s infinite linear;
+                -webkit-animation: hue 10s infinite linear;">
+                    works
+                </span>
+            </p>
+            <button class="hamburger hamburger--elastic" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>  
+
+              <div id="mobileMenu" class="hidden">
+                <ul>
+                    <li><a href="about">about</a></li>
+                    <li><a href="#"><span style="text-decoration: line-through; color: #C4C4C4;">process</span></a></li>
+                    <li><a href="resources">resources</a></li>
+                    <li><a href="#"><span style="text-decoration: line-through; color: #C4C4C4;">shop</span></a></li>
                 </ul>
             </div>
+
         </div>
     
         <div id="masonryGrid">
@@ -143,22 +157,25 @@
     </div>
 <script>
 
-    // window.onload = function () {
-
-    //     anime({
-    //     targets: '.grid-item',
-    //     opacity: 1,
-    //     top: '0px',
-    //     easing: 'easeInOutSine',
-    //     delay: anime.stagger(80) // increase delay by 100ms for each elements.
-    //     });
-    // }
-
     var elmnt = document.getElementById("threeSixDays_header");
 
         function scrollToTop() {
             elmnt.scrollIntoView({behavior:'smooth'});
         }
+
+    var hamburger = document.querySelector(".hamburger");
+    var mobileHeader = document.getElementById("mobileHeader");
+    var mobileMenu = document.getElementById("mobileMenu");
+    // On click
+    hamburger.addEventListener("click", function() {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+        mobileHeader.classList.toggle("collapse-header");
+        mobileHeader.classList.toggle("expand-header");
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("visible");
+        // Do something else, like open/close menu
+    });
 
 </script>
 <script src='js/anime.min.js'></script>

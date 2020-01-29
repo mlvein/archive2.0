@@ -75,126 +75,85 @@ body {
 #mobileHeader{
     display: block;
     width: 100%;
-    height: 60px;
     border-bottom: 1px solid var(--bluegray);
     position: fixed;
     margin-bottom: 40px;
     background-color: #ffffff;
     padding: 10px;
     margin: 0 auto;
+    z-index: 1;
 }
 
-    #menuToggle {
-        display: block;
-        position: relative;
-        top: 25px;
-        left: 4px;
-        z-index: 1;
-        -webkit-user-select: none;
-        user-select: none;
+    .collapse-header {
+        height: 60px;
+        transition: 0.2s ease-in;
     }
 
-        #menuToggle a {
+    .expand-header {
+        height: 100%;
+        transition: 0.2s ease-out;
+    }
+
+    .mobile-line {
+        width: 60px;
+        position: absolute;
+        height: 1px;
+        top: 58px;
+        background-color: var(--bluegray);
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+
+    .revealed {
+        visibility: visible;
+    }
+
+        .works {
+            width: 60px;
+        }
+
+        .resources {
+            width: 26px;
+        }
+
+    #mobileHeader p {
+        width: 50%;
+        font-family: var(--header-font);
+        font-size: var(--body-sub-font);
+        margin-left: 18px;
+    }
+
+    #mobileHeader button {
+        position: absolute;
+        right: 30px;
+        top: 18px;
+    }
+
+    #mobileMenu {
+        display: block;
+        width: 84%;
+    }
+
+        #mobileMenu ul {
+            list-style: none;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        #mobileMenu ul li {
+            font-family: var(--header-font);
+            font-size: var(--header-font-size);
+            padding: 20px;
+            border-bottom: 1px solid var(--lightgray);
+        }
+
+        #mobileMenu ul li a {
             text-decoration: none;
-            color: #232323;
-            transition: color 0.3 ease;
+            color: var(--darkgray);
         }
-
-        #menuToggle input {
-            display: block;
-            width: 40px;
-            height: 32px;
-            position: absolute;
-            top: -7px;
-            left: -5px;
-            opacity: 0;
-            z-index: 2;
-            -webkit-touch-callout: none;
-        }
-
-        #menuToggle span {
-            display: block;
-            width: 33px;
-            height: 4px;
-            margin-bottom: 5px;
-            position: relative;
-            background: var(--darkgray);
-            border-radius: 3px;
-            z-index: 1;
-            transform-origin: 4px 0px;
-            transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-        }
-
-            #menuToggle span:first-child {
-                transform-origin: 0% 0%;
-            }
-
-            #menuToggle span:nth-last-child(2) {
-                transform-origin: 0% 100%;
-            }
-        
-            /*transform lines to crossmark*/
-
-            /* 
-            * Transform all the slices of hamburger
-            * into a crossmark.
-            */
-            #menuToggle input:checked ~ span
-            {
-            opacity: 1;
-            transform: rotate(45deg) translate(-2px, -1px);
-            background: #232323;
-            }
-
-            /*
-            * But let's hide the middle one.
-            */
-            #menuToggle input:checked ~ span:nth-last-child(3)
-            {
-            opacity: 0;
-            transform: rotate(0deg) scale(0.2, 0.2);
-            }
-
-            /*
-            * Ohyeah and the last one should go the other direction
-            */
-            #menuToggle input:checked ~ span:nth-last-child(2)
-            {
-            transform: rotate(-45deg) translate(0, -1px);
-            }
-
-            #menu
-                {
-                    position: relative;
-                    width: 100%;
-                    height: 80vh;
-                    margin: 10px -14px;
-                    /* margin: -100px 0 0 -50px; */
-                    background: #ffffff;
-                    list-style-type: none;
-                    -webkit-font-smoothing: antialiased;
-                    transform-origin: 0% 0%;
-                    transform: translate(0, -100%);
-                    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-                }
-
-                #menu li
-                {
-                padding: 10px 0;
-                font-size: 22px;
-                }
-
-                /*
-                * And let's slide it in from the left
-                */
-                #menuToggle input:checked ~ ul
-                {
-                transform: none;
-                }
-
-
+    
 
     #resourceGrid,        
     #masonryGrid{
@@ -216,7 +175,7 @@ body {
     }
 
     .resource-grid {
-        grid-row-end: span 1;
+        grid-row-end: auto;
         margin-top: 0px;
         opacity: 0;
         position: relative;
@@ -382,3 +341,78 @@ body {
 #sideBar{
     display: none;
 }
+
+/* styles*/
+
+/* hamburger css - elastic animation */
+
+.hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible; }
+    .hamburger:hover {
+      opacity: 0.7; }
+    .hamburger.is-active:hover {
+      opacity: 0.7; }
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+      background-color: var(--bluegray); }
+  
+  .hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative; }
+  
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px; }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+      width: 40px;
+      height: 2px;
+      background-color: var(--bluegray);
+      border-radius: 4px;
+      position: absolute;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease; }
+    .hamburger-inner::before, .hamburger-inner::after {
+      content: "";
+      display: block; }
+    .hamburger-inner::before {
+      top: -10px; }
+    .hamburger-inner::after {
+      bottom: -10px; }
+  
+  .hamburger--elastic .hamburger-inner {
+    top: 2px;
+    transition-duration: 0.275s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+    .hamburger--elastic .hamburger-inner::before {
+      top: 10px;
+      transition: opacity 0.125s 0.275s ease; }
+    .hamburger--elastic .hamburger-inner::after {
+      top: 20px;
+      transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  
+  .hamburger--elastic.is-active .hamburger-inner {
+    transform: translate3d(0, 10px, 0) rotate(135deg);
+    transition-delay: 0.075s; }
+    .hamburger--elastic.is-active .hamburger-inner::before {
+      transition-delay: 0s;
+      opacity: 0; }
+    .hamburger--elastic.is-active .hamburger-inner::after {
+      transform: translate3d(0, -20px, 0) rotate(-270deg);
+      transition-delay: 0.075s; }
