@@ -320,7 +320,7 @@ body {
     border-radius: 2px;
     grid-row-end: span 2;
 }
-
+   
     .span-wide {
         grid-column-end: span 1;
         grid-row-end: span 1;
