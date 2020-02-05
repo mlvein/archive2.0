@@ -185,7 +185,6 @@ body {
     .resource-grid {
         grid-row-end: auto;
         margin-top: 0px;
-        opacity: 0;
         position: relative;
     }
 
