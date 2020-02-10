@@ -216,7 +216,7 @@
                         <li><a href="http://www.hellerbooks.com/docs/about.html" >Steven Heller</a></li>
                         <li><a href="https://www.nngroup.com/" >Nielsen Norman Group</a></li>
                         <li><a href="http://oma.eu/" >OMA</a></li>
-                        <li><a href="https://www.melvinalvarez.com/peopleofcraft.com" >People of Craft</a></li>
+                        <li><a href="https://peopleofcraft.com" >People of Craft</a></li>
                         <li><a href="https://www.tdc.org/" >Type Directors Club</a></li>
                         <li><a href="http://polygraph.cool/" >Polygraph</a></li>
                         <li><a href="https://www.olafureliasson.net/" >Olafur Eliasson</a></li>
@@ -283,32 +283,20 @@
     </div>
 
     <script>
-            window.onload = function () {
-        
-                anime({
-                targets: '.resource-grid',
-                opacity: 1,
-                top: '0px',
-                easing: 'easeInOutSine',
-                delay: anime.stagger(80) // increase delay by 100ms for each elements.
-                });
-            }
 
             var hamburger = document.querySelector(".hamburger");
             var mobileHeader = document.getElementById("mobileHeader");
             var mobileMenu = document.getElementById("mobileMenu");
             // On click
             hamburger.addEventListener("click", function() {
-                // Toggle class "is-active"
+                // Toggles
                 hamburger.classList.toggle("is-active");
                 mobileHeader.classList.toggle("collapse-header");
                 mobileHeader.classList.toggle("expand-header");
                 mobileMenu.classList.toggle("hidden");
                 mobileMenu.classList.toggle("visible");
-                // Do something else, like open/close menu
             });
         
         </script>
-<script src='js/anime.min.js'></script>
 </body>
 </html>
