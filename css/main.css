@@ -49,7 +49,7 @@ body {
     display: none;
 }
 
-    .header-line {
+    #headerLine {
         border-bottom: 1px solid var(--mediumgray);
         position: relative;
         top: -14px;
@@ -63,11 +63,12 @@ body {
         margin-bottom: -4px;
         color: var(--darkgray);
         letter-spacing: 0.01em;
+        text-transform: uppercase;
     }
 
     .header-divider {
         width: 80%;
-        margin: 20px;
+        margin: 14px 20px;
         height: 1px;
         background-color: var(--mediumgray);
     }
@@ -165,9 +166,7 @@ body {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         grid-gap: 10px;
-        /* grid-auto-rows: minmax(180px, auto); */
         grid-auto-flow: dense;
-        margin-top: 100px;
     }
 
         #masonryGrid {
@@ -176,6 +175,7 @@ body {
 
         #resourceGrid {
             grid-auto-rows: auto;
+            margin-top: 100px;
         }
 
     .about-grid {
@@ -262,10 +262,10 @@ body {
 
     .about-item,        
     .resource-grid>ul {
-        margin-left: 10px;
+        margin-left: 0px;
         list-style: none;
         position: relative;
-        top: -10px;
+        top: -24px;
     }
 
     #melvin-card {
@@ -280,9 +280,10 @@ body {
         }
 
             .resource-grid>ul>li::before {
-                content: " + ";
+                content: " • ";
                 position: relative;
-                left: -10px;
+                left: -5px;
+                color: var(--bluegray);
             }
 
         .resource-grid a {
