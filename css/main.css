@@ -222,6 +222,7 @@ body {
                 color: var(--mediumgray);
                 font-family: var(--header-font);
                 font-size: 16px;
+                text-transform: uppercase;
             }
     
                 .span-about>h6:nth-of-type(2),
@@ -232,7 +233,7 @@ body {
                 }
     
             .span-about>p {
-                font-family: 'Varela', sans-serif;
+                font-family: 'Source Sans Pro', sans-serif;
                 font-size: 1.3em;
                 font-weight: var(--body-weight);
                 line-height: 1.4em;

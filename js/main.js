@@ -86,5 +86,14 @@ document.addEventListener("keyup",function(e){
 	}
 });
 
+//random anim elements
+
+var min = 2;
+var max = 5;
+var flips = Math.floor(Math.random() * (+max - +min)) + +min; 
+// console.log(flips);
+var loadingLine = document.getElementById('headerLine');
+loadingLine.style.setProperty('--random-flips', flips);
+
 
   
