@@ -1,4 +1,6 @@
-
+:root {
+  --random-flips: 5;
+}
 
 /* #works,
 #about,
@@ -24,20 +26,20 @@
 
 .text-anim {
     color: #f35626;
-	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: hue 10s infinite linear;
-	-webkit-animation: hue 10s infinite linear;
+	  -webkit-animation: hue 10s infinite linear;
 }
 
-.loading-anim {
+#headerLine {
   display: inline-block;
   transform-origin: bottom center;
   -webkit-transform-origin: bottom center;
-  animation: rotation 1s 3 ease;
-  -webkit-animation: rotation 1s 3 ease;
+  animation: rotation 1s var(--random-flips) ease;
+  -webkit-animation: rotation 1s var(--random-flips) ease;
 }
 
 .marquee {
