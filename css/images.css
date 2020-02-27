@@ -46,6 +46,10 @@
 Masonry Gallery Images
 */
 
+#lucky_royale {
+    background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1582802679/LuckyRoyale.jpg');
+}
+
 #threeSixDays_2 {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573618028/36days_2_nyxhl9.gif');
 }
