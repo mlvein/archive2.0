@@ -353,7 +353,8 @@
             border-color: #ffffff;
             background-color: var(--lightgray);
             position: relative;
-            bottom: 40px;
+            bottom: 30px;
+            right: 40px;
             margin: 0 auto;
         }
 
