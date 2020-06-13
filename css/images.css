@@ -46,6 +46,10 @@
 Masonry Gallery Images
 */
 
+#alone_together {
+    background-image: url(' https://res.cloudinary.com/dodok6plx/image/upload/v1592015739/alone_together_banner.png')
+}
+
 #lucky_royale {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1582802679/LuckyRoyale.jpg');
 }
