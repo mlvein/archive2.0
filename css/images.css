@@ -46,8 +46,12 @@
 Masonry Gallery Images
 */
 
+#ecko {
+    background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1592205217/Ecko.jpg');
+}
+
 #alone_together {
-    background-image: url(' https://res.cloudinary.com/dodok6plx/image/upload/v1592015739/alone_together_banner.png')
+    background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1592015739/alone_together_banner.png')
 }
 
 #lucky_royale {
