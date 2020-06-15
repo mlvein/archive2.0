@@ -46,6 +46,10 @@
 Masonry Gallery Images
 */
 
+#discovery_bot {
+    background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1592206910/discovery_bot.jpg');
+}
+
 #ecko {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1592205217/Ecko.jpg');
 }
