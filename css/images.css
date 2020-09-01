@@ -46,6 +46,10 @@
 Masonry Gallery Images
 */
 
+#gitcoin_twitter {
+    background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1598357923/header-gitcoin.png');
+}
+
 #discovery_bot {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1592206910/discovery_bot.jpg');
 }
