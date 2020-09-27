@@ -42,12 +42,17 @@
     }
 }
 
+#masonryGrid>div>video {
+    width: 100%;
+    height: 100%;    
+}
+
 /*
 Masonry Gallery Images
 */
 
-#gitcoin_twitter {
-    background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1598357923/header-gitcoin.png');
+#hcpp20 {
+    background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1601202392/hcpp20.jpg')
 }
 
 #discovery_bot {
@@ -74,9 +79,9 @@ Masonry Gallery Images
     background-image: url('https://storage.googleapis.com/melvin-images/imgs/36days04_z_03.gif');
 }
 
-#threeSixDays_header {
+/* #threeSixDays_header {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1573654869/36days_header.gif')
-}
+} */
 
 #vac_logo {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1578989846/vac_logo.jpg');
