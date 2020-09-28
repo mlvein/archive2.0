@@ -279,7 +279,7 @@ body {
             color: var(--darkgray);
             padding: 4px;
         }
-
+            .about-grid>ul>li::before,
             .resource-grid>ul>li::before {
                 content: " • ";
                 position: relative;
