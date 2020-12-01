@@ -298,6 +298,7 @@
 
             /*disabled menu options*/
             #sideHeader>ul>li:nth-child(3),
+            #sideHeader>ul>li:nth-child(4),
             #sideHeader>ul>li:nth-child(5) {
                 color: var(--mediumgray);
                 text-decoration: line-through;
@@ -305,6 +306,7 @@
             }
 
                 #sideHeader>ul>li>span:nth-child(3),
+                #sideHeader>ul>li>span:nth-child(4),
                 #sideHeader>ul>li>span:nth-child(5) {
                     text-decoration: none;
                 }
