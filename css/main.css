@@ -178,6 +178,10 @@ body {
             margin-top: 100px;
         }
 
+        #masonryGrid>div:first-child {
+            margin-top: 80px;
+        }
+
     .about-grid {
         padding: 0 0 0 0;
     }
