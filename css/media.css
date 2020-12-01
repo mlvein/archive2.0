@@ -44,10 +44,6 @@
         padding: 10px;
     }
 
-        #masonryGrid>div:first-child {
-            margin-top: 0px;
-        }
-
         .about-grid {
             padding: 20px 0 0 0;
         } 
@@ -158,7 +154,7 @@
             }
 
         #masonryGrid {
-            margin-top: 100px;
+            margin-top: 20px;
         }
 
         .span-wide {
@@ -396,17 +392,13 @@
         /* padding: 10px; */
     }
 
-        #masonryGrid>div:first-child {
-            margin-top: 0px;
-        }
-
     .about-grid {
         padding: 20px 0 0 0;
     } 
 
-    #masonryGrid {
-        margin-top: 20px;
-    }
+        #masonryGrid {
+            margin-top: 20px;
+        }
 
     #resourceGrid {
         margin-top: 0px;
