@@ -51,6 +51,14 @@
 Masonry Gallery Images
 */
 
+#clearpoll {
+    background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1606821394/clearpoll.png');
+}
+
+#moloch {
+    background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1606820876/moloch.png');
+}
+
 #hcpp20 {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1601202392/hcpp20.jpg');
 }
