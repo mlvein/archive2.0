@@ -51,6 +51,10 @@
 Masonry Gallery Images
 */
 
+#honeypotmoney {
+    background-image: url('https://github.com/melvinalvarez/HoneypotMoney_Design/raw/main/sample_comp_night.gif')
+}
+
 #canunft {
     background-image: url('https://res.cloudinary.com/dodok6plx/image/upload/v1613696935/canunft.gif');
 }
