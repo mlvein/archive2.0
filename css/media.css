@@ -301,7 +301,7 @@
             #sideHeader>ul>li:nth-child(4),
             #sideHeader>ul>li:nth-child(5) {
                 color: var(--mediumgray);
-               /* text-decoration: line-through; */
+               /*text-decoration: line-through;*/
                 text-transform: uppercase;
             }
 
