@@ -44,9 +44,30 @@
         padding: 10px;
     }
 
+    /*Bento Container*/
+
+        .flex-container {
+            width: 100%;
+            min-width: 680px;
+            max-width: 1000px;
+        }
+
         .about-grid {
             padding: 20px 0 0 0;
         } 
+
+            .about-info {
+                width: 664px;
+            }
+
+            .about-info>p {
+                width: 86%;
+                margin-block-start: 0;
+            }
+
+            .about-card {
+                width: 360px;
+            }
 
         #resourceGrid {
             margin-top: 100px;
@@ -67,7 +88,7 @@
             font-family: var(--body-font);
             font-size: var(--body-font-size);
             position: relative;
-            color: var(--darkgray);
+            color: var(--bg-card);
             letter-spacing: 0.02em;
             text-transform: uppercase;
         }
@@ -119,7 +140,7 @@
             .about-list>ul>li,
             .resource-grid>ul>li {
                 font-family: var(--body-font);
-                color: var(--darkgray);
+                color: var(--bg-card);
                 font-weight: var(--body-weight);
                 line-height: var(--body-line-height);
                 letter-spacing: var(--body-spacing);
@@ -134,7 +155,7 @@
             
             .about-list>ul>li>a,
             .resource-grid>ul>li>a {
-                color: var(--darkgray);
+                color: var(--bg-card);
                 text-decoration: none;
                 transition: 500ms color;
                 font-weight: 600;
@@ -149,8 +170,8 @@
 	            -webkit-text-fill-color: transparent;
                 animation: hue 10s infinite linear;
                 -webkit-animation: hue 10s infinite linear;
-                font-weight: 600;
-                text-transform: uppercase;
+                /* font-weight: 600;
+                text-transform: uppercase; */
             }
 
         #masonryGrid {
@@ -205,16 +226,23 @@
        font-size: 0.8em;
        font-weight: var(--body-weight);
        line-height: var(--body-line-height);
-       color: var(--darkgray);
+       color: var(--bg-card);
        padding-left: 20px;
        letter-spacing: var(--body-spacing);
    }
 
     #sideHeader>p>a {
-        font-weight: 600;
-        color: var(--blue);
+        font-family: var(--body-tiny-font);
+        font-style: italic;
+        font-weight: 400;
+        color: var(--bg-card);
         text-decoration: none;
+        text-decoration: underline;
     }
+
+        #sideHeader>p>a:hover {
+            color: var(--blue);
+        }
 
     #sideHeader>ul {
         list-style: none;
@@ -227,16 +255,17 @@
             font-family: var(--header-font);
             font-size: var(--header-font-size);
             text-align: left;
-            color: var(--darkgray);
+            color: var(--bg-card);
             overflow: hidden;
-            border-bottom: 1px solid var(--mediumgray);
+            border-bottom: 1px solid var(--gray-light);
         }
 
             #sideHeader>ul>li>a {
                 text-decoration: none;
                 text-transform: uppercase;
-                font-weight: 700;
-                color: var(--darkgray);
+                letter-spacing: 0.01em;
+                font-weight: 400;
+                color: var(--bg-card);
             }
 
             .works-line,
@@ -278,7 +307,7 @@
 
             .menu-number {
                 font-family: var(--body-font);
-                color: var(--darkgray);
+                color: var(--bg-card);
                 font-size: 0.5em;
                 position: relative;
                 top: -14px;
@@ -297,6 +326,7 @@
             }
 
             /*disabled menu options*/
+            #sideHeader>ul>li:nth-child(2),
             #sideHeader>ul>li:nth-child(3),
             #sideHeader>ul>li:nth-child(4),
             #sideHeader>ul>li:nth-child(5) {
@@ -340,11 +370,17 @@
             position: relative;
             right: 300px;
             font-family: var(--header-font);
-            text-transform: uppercase;
+            /* text-transform: uppercase; */
             letter-spacing: .04em;
             word-spacing: 0.2em;
-            font-size: 18px;
+            font-size: 14px;
+            font-style: italic;
+            color: var(--bg-card);
         }
+
+            #sidebar-quote>p {
+                text-align: center;
+            }
 
         #backTop {
             opacity: 1;
@@ -358,11 +394,13 @@
             bottom: 30px;
             right: 40px;
             margin: 0 auto;
+            border-bottom-style: inset;
+            border-right-style: inset;
         }
 
             #backTop>span {
                 font-size: 1.6em;
-                color: var(--darkgray);
+                color: var(--bg-card);
             }
 
             #backTop:focus{
@@ -374,7 +412,7 @@
             }
 
             #backTop:hover {
-                background-color: var(--blue);
+                background-color: var(--bluegray);
                 cursor: pointer;
             }
 
@@ -392,9 +430,43 @@
         /* padding: 10px; */
     }
 
+    #aboutGrid {
+        width: 980px;
+        height: 100vh;
+        overflow: scroll;
+        background-color: var(--white);
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        margin-top: 16px;
+        padding-top: 36px;
+    }
+
+        #aboutGrid::-webkit-scrollbar {
+            display: none;
+        }
+
+    /*Bento Flex Container*/
+
     .about-grid {
         padding: 20px 0 0 0;
     } 
+
+        .about-info {
+            width: 664px;
+        }
+
+        .about-info>p {
+            width: 86%;
+            margin-block-start: 0;
+        }
+
+        .flex-container {
+            width: 960px;
+        }
+
+        .about-card {
+            width: 360px;
+        }
 
         #masonryGrid {
             margin-top: 20px;
@@ -434,9 +506,8 @@
         .resource-grid>h4 {
             font-family: var(--header-font);
             font-size: 18px;
-            font-weight: 700;
             position: relative;
-            color: var(--darkgray);
+            color: var(--bg-card);
             letter-spacing: 0.02em;
             text-transform: uppercase;
         }
@@ -489,7 +560,7 @@
             .about-list>ul>li,
             .resource-grid>ul>li {
                 font-family: var(--body-font);
-                color: var(--darkgray);
+                color: var(--bg-card);
                 font-weight: var(--body-weight);
                 line-height: var(--body-line-height);
                 letter-spacing: var(--body-spacing);
@@ -504,7 +575,7 @@
             
             .about-list>ul>li>a,
             .resource-grid>ul>li>a {
-                color: var(--darkgray);
+                color: var(--bg-card);
                 text-decoration: none;
                 transition: 500ms color;
                 font-weight: 400;
@@ -521,10 +592,10 @@
 	            -webkit-text-fill-color: transparent;
                 animation: hue 10s infinite linear;
                 -webkit-animation: hue 10s infinite linear;
-                font-weight: 400;
-                font-family: var(--header-font), sans-serif;
-                text-transform: uppercase;
-                font-size: 11px;
+                /* font-weight: 400; */
+                /* font-family: var(--header-font), sans-serif; */
+                /* text-transform: uppercase; */
+                /* font-size: 11px; */
             }
     
     .grid-item {
@@ -594,7 +665,7 @@
             font-size: 1.64em;
             font-weight: var(--body-weight);
             line-height: 1.4em;
-            color: var(--darkgray);
+            color: var(--bg-card);
             width: 80%;
             margin-top: -20px;
         }

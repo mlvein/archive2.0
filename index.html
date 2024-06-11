@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-24175625-1"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDK4C76K5B"></script>
     <script>
-    /*global dataLayer*/
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'UA-24175625-1');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XDK4C76K5B');
     </script>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Melvin Alvarez</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600|Varela&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Catamaran:600" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/images.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/media.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/animation.css'>
-    <script src="https://kit.fontawesome.com/9bdc31620e.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/9bdc31620e.js"></script> -->
 </head>
 <body>
 
     <div class="container">
         <header id="sideHeader">
 
-            <h3>
-                <span class="loading-anim" id="headerLine">&nbsp; &nbsp; &nbsp;</span>
-                 Hello! this is Melvin Alvarez
-            </h3>
+            <h1>
+                <!-- <span class="loading-anim" id="headerLine">&nbsp; &nbsp; &nbsp;</span> -->
+                I'm Melvin Alvarez — A Product Designer with a background in Visual Design <span style="color:#0074B9;
+                background-image: -webkit-linear-gradient(92deg, #4cf326, #883afe);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: hue 10s infinite linear;
+                -webkit-animation: hue 10s infinite linear;"> ⚘ </span>
+            </h1>
 
             <div class="header-divider"></div>
 
             <ul>
                     <li id="works">
-                        <a class="marquee" href="https://melvin.works/">&nbsp; works &nbsp; works <span> &nbsp; works &nbsp; works</span> </a>
+                        <a href="https://melvinalvarez.com"> Works <span style="color:#0074B9;
+                            background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            animation: hue 10s infinite linear;
+                            -webkit-animation: hue 10s infinite linear;">  ✼ </span> </a>
                     </li>
                     <li id="about">
-                        <a href="about">about</a>
+                        <a href="about"> About </a>
                     </li>
                     <li id="process">
-                        process 
+                        Process 
                     </li>
                     <li id="resources">
-                        <a href="resources">resources</a>
+                        <a href="resources"> Resources </a>
                     </li>
                     <li id="shop">
-                        shop
+                        Shop
                     </li>
             </ul>
 
@@ -56,12 +70,11 @@
 
             <p>
                 You can follow me on 
-                <a href="https://github.com/mlvein">github</a>, 
-                <a href="https://twitter.com/mlvein">twitter</a>,
-                <br/>
-                <a href="https://dribbble.com/melvinalvarez">dribbble</a>, or
-                send me an
-                <a href="mailto:alvarezmelvin@me.com?subject=Hey Melvin!"  >email</a> 
+                <a href="https://read.cv/melvin">read.cv</a>, </br>
+                <a href="https://github.com/mlvein">github</a>,
+                <a href="https://www.figma.com/@melvin">figma</a>
+                or
+                <a href="mailto:alvarezmelvin@me.com?subject=Hey Melvin!">email me!</a> 
             </p>
         </header>
 
@@ -87,12 +100,22 @@
               </button>  
 
               <div id="mobileMenu" class="hidden">
+                <!-- <h1>
+                    I'm Melvin Alvarez — A Product Designer with a background in Visual Design <span style="color:#0074B9;
+                    background-image: -webkit-linear-gradient(92deg, #4cf326, #883afe);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    animation: hue 10s infinite linear;
+                    -webkit-animation: hue 10s infinite linear;"> ⚘ </span>
+                </h1> -->
                 <ul>
                     <li><a href="about">about</a></li>
                     <li><a href="#"><span style="text-decoration: line-through; color: #C4C4C4;">process</span></a></li>
                     <li><a href="resources">resources</a></li>
                     <li><a href="#"><span style="text-decoration: line-through; color: #C4C4C4;">shop</span></a></li>
                 </ul>
+               
             </div>
 
         </div>
@@ -146,17 +169,17 @@
                 </ul>
             </div>
             <div id="sidebar-quote">
-                <p>Somewhere something incredible is waiting to be known.</p>
+                <p id="sidebarQuote">Hello birdie, it's okay birdie</p>
             </div>
             <button onclick="scrollToTop()" id="backTop" title="Back to Top">
-                <span class="fas fa-angle-double-up"></span>
+                <span class=""> 🔝 </span>
             </button>
         </nav>
 
     </div>
 <script>
 
-    var elmnt = document.getElementById("threeSixDays_header");
+    var elmnt = document.getElementById("honeypotmoney");
 
         function scrollToTop() {
             elmnt.scrollIntoView({behavior:'smooth'});

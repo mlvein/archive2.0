@@ -1,56 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDK4C76K5B"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XDK4C76K5B');
+    </script>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>About - Melvin Alvarez</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600|Varela&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Catamaran:600" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/images.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/media.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/animation.css'>
+    <!-- <script src="https://kit.fontawesome.com/9bdc31620e.js"></script> -->
 </head>
 <body>
     <div class="container">
         <header id="sideHeader">
 
-            <h3>
-                <span class="loading-anim" id="headerLine">&nbsp; &nbsp; &nbsp;</span>
-                 Hello! this is Melvin Alvarez
-            </h3>
+            <h1>
+                <!-- <span class="loading-anim" id="headerLine">&nbsp; &nbsp; &nbsp;</span> -->
+                I'm Melvin Alvarez — A Product Designer with a background in Visual Design <span style="color:#0074B9;
+                background-image: -webkit-linear-gradient(92deg, #4cf326, #883afe);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: hue 10s infinite linear;
+                -webkit-animation: hue 10s infinite linear;"> ⚘ </span>
+            </h1>
 
             <div class="header-divider"></div>
 
             <ul>
-                    <li id="works">
-                        <a href="https://melvin.works/">works</a>
-                    </li>
-                    <li id="about">
-                        <a class="marquee" href="about">&nbsp; about &nbsp; about <span> &nbsp; about &nbsp; about</span> </a>
-                    </li>
-                    <li id="process">
-                        process 
-                    </li>
-                    <li id="resources">
-                        <a href="resources">resources</a>
-                    </li>
-                    <li id="shop">
-                        shop
-                    </li>
+                <li id="works">
+                    <a href="https://melvinalvarez.com"> Works </a>
+                </li>
+                <li id="about">
+                    <a href="about"> About <span style="color:#0074B9;
+                        background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        animation: hue 10s infinite linear;
+                        -webkit-animation: hue 10s infinite linear;">  ✼ </span> </a>
+                </li>
+                <li id="process">
+                    Process 
+                </li>
+                <li id="resources">
+                    <a href="resources"> Resources </a>
+                </li>
+                <li id="shop">
+                    Shop
+                </li>
             </ul>
 
             <div class="header-divider"></div>
 
             <p>
                 You can follow me on 
-                <a href="https://github.com/mlvein">github</a>, 
-                <a href="https://twitter.com/mlvein">twitter</a>,
-                <br/>
-                <a href="https://dribbble.com/melvinalvarez">dribbble</a>, or
-                send me an
-                <a href="mailto:alvarezmelvin@me.com?subject=Hey Melvin!"  >email</a> 
+                <a href="https://read.cv/melvin">read.cv</a>, </br>
+                <a href="https://github.com/mlvein">github</a>,
+                <a href="https://www.figma.com/@melvin">figma</a>
+                or
+                <a href="mailto:alvarezmelvin@me.com?subject=Hey Melvin!">email me!</a> 
             </p>
         </header>
 
@@ -60,12 +83,12 @@
                 <span class="mobile-line works"></span> 
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                 <span style="color:#0074B9;
-                background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+                background-image: -webkit-linear-gradient(45deg, #f35626, #feab3a);
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                animation: hue 10s infinite linear;
-                -webkit-animation: hue 10s infinite linear;">
+                animation: hue 8s infinite linear;
+                -webkit-animation: hue 8s infinite linear;">
                     about
                 </span>
             </p>
@@ -86,8 +109,8 @@
 
         </div>
     
-        <div id="masonryGrid" class="about-grid">
-            <div id="melvin-card" class="grid-item proj-about about-item">
+        <div id="aboutGrid" class="about-grid">
+            <!-- <div id="melvin-card" class="grid-item proj-about about-item">
                 <div class="melvin-img proj-about"></div>
                 <div class="about-list">
                     <h4>Socials</h4>
@@ -104,57 +127,104 @@
                         <li><a href="https://designawards.core77.com/Design-for-Social-Impact/32075/Flood-Preparedness-Kit"> &nbsp; Core77 Design for Social Impact</a></li>
                     </ul>
                 </div>
+            </div> -->
+
+            <div class="flex-container">
+                <div class="about-me">
+                    <div class="about-info">
+                        <p>
+                            Hello, I'm Melvin 👋
+                        </p>
+                        <p>
+                            A Product Designer focused on bridging the gap between users and new opportunities in tech. 
+                        </p>
+                        <p>
+                            I have over nine years experience in design, initially working as a 
+                            Visual Designer for startups and agencies in San Francisco before 
+                            working on digital products designing tools that help organizations, 
+                            their business, and their audience unlock growth in new segments.
+                        </p>
+                        <p>        
+                            Previously, I've worked with the Gitcoin Core team to design their 
+                            products including Gitcoin Grants, providing millions in funding to 
+                            thousands of open source projects across the globe. I then worked at 
+                            Mojito helping design an enterprise platform that onboards businesses 
+                            and their audience into the Web3 space. Currently, I am working with
+                            early-stage startups designing products involving AI, Augmented Reality 
+                            and Enterprise Resource Planning.
+                        </p>
+                        <p>
+                            I'm always down for collaborations, feel free to reach me at
+                            <a href="mailto:alvarezmelvin@me.com?subject=Hey Melvin!" 
+                            style="color:#0074B9;
+                            background-image: -webkit-linear-gradient(45deg, #f35626, #feab3a);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            animation: hue 8s infinite linear;
+                            -webkit-animation: hue 8s infinite linear;">
+                                alvarezmelvin@me.com</a> with what you have in mind. Thanks for reading! ✌️😊
+                        </p>
+                    </div>
+                    <div class="about-overview"></div>
+                    
+                </div>
+
+                <!-- <div id="aboutFavSong" class="about-card">
+                    <img src="../archive2.0/images/about-imgs/maggie_rogers_theKill.png" alt="Maggie Rogers Don't Forget Me Album Cover" width="100" height="100">
+                    <div class="about-card-details">
+                        <p class="card-body-tiny">Currently Listening</p>
+                        <div class="card-details-title"> 
+                            <p class="card-heading">The Kill</p>
+                            <p class="card-body">Maggie Rogers</p>
+                        </div>
+                        <p class="card-body-tiny">★★★★★️️</p>
+                    </div>
+                </div>
+    
+                <div id="aboutFavBook" class="about-card">
+                    <img src="../archive2.0/images/about-imgs/dune_messiah.png" alt="Maggie Rogers Don't Forget Me Album Cover" width="100" height="100">
+                    <div class="about-card-details">
+                        <p class="card-body-tiny">Currently Reading</p>
+                        <div class="card-details-title"> 
+                            <p class="card-heading">Dune: Messiah</p>
+                            <p class="card-body">Frank Herbert</p>
+                        </div>
+                        <p class="card-body-tiny">★★★★</p>
+                    </div>
+                </div>
+    
+                <div id="aboutFavBook" class="about-card">
+                    <img src="../archive2.0/images/about-imgs/grimguard_tactics.png" alt="Maggie Rogers Don't Forget Me Album Cover" width="100" height="100">
+                    <div class="about-card-details">
+                        <p class="card-body-tiny">Currently Playing</p>
+                        <div class="card-details-title"> 
+                            <p class="card-heading">Grimguard Tactics</p>
+                            <p class="card-body">iOS, Strategy</p>
+                        </div>
+                        <p class="card-body-tiny">★★★★½</p>
+                    </div>
+                </div>
+    
+                <div id="aboutFavBook" class="about-card">
+                    <img src="../archive2.0/images/about-imgs/grimguard_tactics.png" alt="Maggie Rogers Don't Forget Me Album Cover" width="100" height="100">
+                    <div class="about-card-details">
+                        <p class="card-body-tiny">Recently Watched</p>
+                        <div class="card-details-title"> 
+                            <p class="card-heading">Godzilla Minus One</p>
+                            <p class="card-body">2023, Takashi Yamazaki</p>
+                        </div>
+                        <p class="card-body-tiny">★★★★½</p>
+                    </div>
+                </div> -->
             </div>
 
+            
+
             <div class="grid-item span-about">
-                <h6 style="margin-top:0px;">Hello, this is Melvin</h6>
-                <p>
-                    I love all forms of visual communication &mdash; 
-                    particularly the ones that help people understand information that can be seen as
-                    complex and intimidating. <br/><br/>
-                </p>
-                <h6>What design means to me</h6>
-                <p>
-                    For me, design means understanding &mdash; it is the
-                    ability to translate something that's hard to understand into something
-                    that seems natural. What made me fall in love with design is its power to help 
-                    interpret complex information through the use of typography, 
-                    color, materiality, and composition. 
-                    <br/><br/>
-                    As a designer, you are given the opportunity to influence how other 
-                    people think and react &mdash; through understanding how they will
-                    perceive your message. <br/> <br/>
-                </p>
-                <h6>What I think of design as a profession</h6>
-                <p>
-                    As designers, part of our job is to look beyond what we 
-                    see to truly understand what is right in front of us. 
-                    We filter out the noise and synthesize a solution formulated 
-                    from a process that is heavily anchored to functionality 
-                    while also tapping into beauty and its immense power to 
-                    inspire. <br/> <br/>
-                </p>
-                <h6>My design process</h6>
-                <p>        
-                    My design process revolves around experimentation with both 
-                    analog and digital tools. I heavily rely on the foundations 
-                    of graphic and motion design to figure out ways to 
-                    visually communicate an idea or to test out solutions to 
-                    current needs. I relish in the process of failing, learning, and 
-                    integrating new-found knowledge and skills to current and 
-                    future needs. <br/> <br/>
-                </p>
-                <h6>My design background</h6>
-                <p>
-                    I received a BA in Multimedia Arts at Asia Pacific College 
-                    in Manila, a BFA in Graphic Design at Otis College of Art 
-                    and Design in Los Angeles, and an unfinished MFA in Web 
-                    Design and New Media at Academy of Art University in San 
-                    Francisco. <br/> <br/>
-                        
-                    I'm always down for collaborations and fun projects. 
-                    Feel free to reach me at <a class="text-anim" href="mailto:alvarezmelvin@me.com?subject=Hello, Melvin!" >alvarezmelvin@me.com</a> <br/> <br/>
-                </p>
+
+                
+                
             </div>
         </div>
     
@@ -167,7 +237,7 @@
                     </ul>
                 </div>
                 <div id="sidebar-quote">
-                    <p>Somewhere something incredible is waiting to be known.</p>
+                    <p id="sidebarQuote">Hello birdie, it's okay birdie</p>
                 </div>
                 <div id="sidebar-backtotop" title="Back to top"></div>
         </nav>
