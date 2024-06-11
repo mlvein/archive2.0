@@ -1,4 +1,24 @@
 :root {
+    /*Primitives*/
+
+    /*Colors*/
+    --darkgray: #3F3F3F;
+    --mediumgray: #C4C4C4;
+    --lightgray: #F3F3F3;
+    --gray-light: #E7E7E7;
+    --blue: #0074B9;
+    --bluegray: #B6C9D2;
+    --bg-card: #384269;
+    --white: #FFFFFF;
+
+    --none: 0px;
+    --xs: 4px;
+    --s: 8px;
+    --m: 12px;
+    --l: 16px;
+    --xl: 20px;
+    --xxl: 24px;
+
     /*Typography*/
     --body-font: 'DM Sans', sans-serif;
     --body-sub-font: 'DM Sans', sans-serif;
@@ -14,15 +34,10 @@
     --body-spacing: 0.02em;
     --body-weight: 300;
 
-    /*Colors*/
-    --darkgray: #3F3F3F;
-    --mediumgray: #C4C4C4;
-    --lightgray: #F3F3F3;
-    --gray-light: #E7E7E7;
-    --blue: #0074B9;
-    --bluegray: #B6C9D2;
-    --bg-card: #384269;
-    --white: #FFFFFF;
+    /*Tokens*/
+    
+
+    
 }
 
 
