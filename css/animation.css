@@ -16,14 +16,6 @@
         left: 6px;
     } */
 
-#sideHeader>ul>li>a {
-    transition: color 100ms;
-}
-
-    #sideHeader>ul>li>a:hover {
-        color: var(--blue);
-    }
-
 .text-anim {
     color: #f35626;
 	  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);

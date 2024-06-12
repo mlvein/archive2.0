@@ -35,7 +35,7 @@
     --body-weight: 300;
 
     /*Tokens*/
-    
+
 
     
 }
@@ -69,6 +69,20 @@ body {
 #sideHeader{
     display: none;
 }
+
+#sideHeader>ul>li>a {
+    transition: color 100ms;
+}
+
+    #sideHeader>ul>li>a:hover {
+      color: var(--blue);
+      background-image: -webkit-linear-gradient(45deg, #0074B9, #feab3a);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: hue 10s infinite linear;
+      -webkit-animation: hue 10s infinite linear;
+    }
 
 .active-gradient {
     color:#0074B9;
