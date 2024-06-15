@@ -241,6 +241,11 @@ body {
         margin-top: 100px;
     }
 
+    /* add scroll margin on scroll to top*/
+    .top-scroll {
+        scroll-margin-top: 40px;
+    }
+
         
 
     #resourceGrid,        
