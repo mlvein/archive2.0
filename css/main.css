@@ -74,16 +74,6 @@ body {
     transition: color 100ms;
 }
 
-    #sideHeader>ul>li>a:hover {
-      color: var(--blue);
-      background-image: -webkit-linear-gradient(45deg, #0074B9, #feab3a);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: hue 10s infinite linear;
-      -webkit-animation: hue 10s infinite linear;
-    }
-
 .active-gradient {
     color:#0074B9;
     background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
@@ -470,14 +460,6 @@ body {
         width: 100%;
     }
 
-    /* .about-info>p:nth-child(1),
-    .about-info>p:nth-child(2) {
-        font-family: var(--header-font);
-        font-size: var(--header-font-size);
-        color: var(--bg-card);
-        width: 100%;
-    } */
-
         .about-info>p{
             font-family: var(--header-font);
             font-size: var(--header-font-size);
@@ -485,59 +467,6 @@ body {
             width: 100%;
         }
 
-.about-card {
-    background-color: var(--white);
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    padding: 8px;
-    border: 1px solid var(--gray-light);
-    border-radius: 8px;
-    height:fit-content;
-    width: 80%;
-    min-width: 280px;
-    flex-grow: 1;
-}
-
-.about-card>img {
-    object-fit: fill;
-}
-
-    .about-card-details {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        justify-content: space-around;
-    }
-
-        .card-details-title {
-            display: flex;
-            flex-direction: column;
-            gap: 0px;
-        }
-
-            .card-details-title>p, .about-card-details>p {
-                margin-block-start: 0px;
-                margin-block-end: 0px;
-            }
-
-        .card-body-tiny {
-            font-family: var(--body-tiny-font);
-            font-size: var(--body-tiny-size);
-            color: var(--bg-card);
-        }
-
-        .card-heading {
-            font-family: var(--header-font);
-            font-size: var(--header-font-size);
-            color: var(--bg-card);
-        }
-
-        .card-body {
-            font-family: var(--body-font);
-            font-size: var(--body-font-size);
-            color: var(--bg-card);
-        }
 
 .about-hello {
     background: linear-gradient(135deg, rgba(255, 205, 247, 0.60) -0.64%, rgba(255, 251, 231, 0.60) 13.82%, rgba(255, 251, 231, 0.60) 34.72%, rgba(168, 234, 234, 0.60) 100%);
