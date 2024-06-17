@@ -278,52 +278,6 @@
                 cursor: pointer;
             }
 
-            .works-line,
-            .about-line,
-            .process-line,
-            .resources-line,
-            .shop-line {
-                position: relative;
-                top: -14px;
-                height: 1px;
-                display: block;
-                background-color: var(--lightgray);
-            }
-
-                .works-line {
-                    width: 45%;
-                    left: 90px;
-                }
-
-                .about-line {
-                    width: 40%;
-                    left: 100px;
-                }
-
-                .process-line {
-                    width: 40%;
-                    left: 100px;
-                }
-
-                .resources-line {
-                    width: 30%;
-                    left: 120px;
-                }
-
-                .shop-line {
-                    width: 45%;
-                    left: 90px;
-                }
-
-            .menu-number {
-                font-family: var(--body-font);
-                color: var(--bg-card);
-                font-size: 0.5em;
-                position: relative;
-                top: -14px;
-                left: -8px;
-            }
-
             #sideHeader>ul>li:first-child {
                 padding-top: 0px;
                 margin-top: 10px;
@@ -366,7 +320,6 @@
        flex-direction: column;
        justify-content: space-between;
        background-color: #ffffff;
-       /* height:100vh; */
        width: 60px;
    }
 
@@ -380,7 +333,6 @@
             position: relative;
             right: 300px;
             font-family: var(--header-font);
-            /* text-transform: uppercase; */
             letter-spacing: .04em;
             word-spacing: 0.2em;
             font-size: 14px;
@@ -437,7 +389,6 @@
         grid-gap: 10px;
         grid-auto-rows: minmax(180px, auto);
         grid-auto-flow: dense;
-        /* padding: 10px; */
     }
 
     #aboutGrid {
@@ -530,11 +481,6 @@
             top: -20px;
         }
 
-        /* .melvin-img:nth-of-type(2),
-        .melvin-img:nth-of-type(3) {
-            display: block;
-        } */
-
         .about-list {
             grid-column-start: 1;
             grid-row-start: 2;
@@ -602,10 +548,6 @@
 	            -webkit-text-fill-color: transparent;
                 animation: hue 10s infinite linear;
                 -webkit-animation: hue 10s infinite linear;
-                /* font-weight: 400; */
-                /* font-family: var(--header-font), sans-serif; */
-                /* text-transform: uppercase; */
-                /* font-size: 11px; */
             }
     
     .grid-item {
