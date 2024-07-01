@@ -16,7 +16,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/images.css'>
@@ -27,10 +27,8 @@
         <header id="sideHeader">
 
             <h1>
-                I'm Melvin Alvarez — A Product Designer with a background in Visual Design <span class="active-gradient"> ⚘ </span>
+                I'm Melvin Alvarez — <br/> a Product Designer with a background in Visual Design ⚘⚘⚘
             </h1>
-
-            <div class="header-divider"></div>
 
             <ul>
                 <li id="works">
@@ -40,24 +38,20 @@
                     <a href="about"> About </a>
                 </li>
                 <li id="process">
-                    Process 
+                    <a href="process/"> Process </a> 
                 </li>
-                <li id="resources">
-                    <a href="resources"> Resources <span class="active-gradient">  ✼ </span> </a>
+                <li id="resources" class="active-menu">
+                    <a href="resources"> Resources <span class="anim-rotate">  ✼ </span> </a>
                 </li>
                 <li id="shop">
                     Shop
                 </li>
             </ul>
 
-
-            <div class="header-divider"></div>
-
             <p>
                 You can follow me on 
                 <a href="https://read.cv/melvin">read.cv</a>, </br>
-                <a href="https://github.com/mlvein">github</a>,
-                <a href="https://www.figma.com/@melvin">figma</a>
+                <a href="https://github.com/mlvein">github</a>
                 or
                 <a href="mailto:alvarezmelvin@me.com?subject=Hey Melvin!">email me!</a> 
             </p>
@@ -82,240 +76,765 @@
                 <ul>
                     <li><a href="https://melvinalvarez.com">works</a></li>
                     <li><a href="about">about</a></li>
-                    <li><a href="#"><span style="text-decoration: line-through; color: #C4C4C4;">process</span></a></li>
+                    <li><a href="process/">process</a></li>
                     <li><a href="#"><span style="text-decoration: line-through; color: #C4C4C4;">shop</span></a></li>
                 </ul>
             </div>
 
         </div>
     
-        <div id="resourceGrid">
-            <div class="resource-grid">
+        <div id="resourceGrid" class="filter-item-container">
+    
+            <div id="resourceFilter" class="position-fixed filters">
+                <p id="filterAll" class="filter-option filter-active" data-filter="all">All</p>
+                <p id="filterBooks" class="filter-option filter-default" data-filter="book">Books</p>
+                <p id="filterSystems" class="filter-option filter-default" data-filter="design-system">Design Systems</p>
+                <p id="filterInspiration" class="filter-option filter-default" data-filter="inspiration">Inspiration</p>
+                <p id="filterMedia" class="filter-option filter-default" data-filter="media">Media</p>
+                <p id="filterResearch" class="filter-option filter-default" data-filter="research">Research</p>
+            </div>
 
-                <h4>Inspirations</h4>
-                <div class="resource-header-line"></div>
-                <ul>
-                    <li><a href="https://www.awwwards.com/">AWWWARDS</a></li>
-                    <li><a href="http://booooooom.com/">BOOOOOOOM</a></li>
-                    <li><a href="http://underconsideration.com/">Under Consideration</a></li>
-                    <li><a href="https://eyeondesign.aiga.org/">AIGA Eye on Design</a></li>
-                    <li><a href="https://www.itsnicethat.com/">It's Nice That</a></li>
-                    <li><a href="https://www.domestika.org/en/blog">Domestika</a></li>
-                    <li><a href="http://nfgraphics.com/">Nice Fucking Graphics</a></li>
-                    <li><a href="https://design-milk.com/">Design Milk</a></li>
-                    <li><a href="https://kottke.org/">Kottke</a></li>
-                    <li><a href="http://motionographer.com/">Motionographer</a></li>
-                    <li><a href="http://prostheticknowledge.tumblr.com/">Prosthetic Knowledge</a></li>
-                    <li><a href="http://www.swiss-miss.com/">Swiss Miss</a></li>
-                    <li><a href="http://www.casualoptimist.com/">The Casual Optimist</a></li>
-                    <li><a href="https://www.designerlynx.co/">Designer Lynx</a></li>
-                    <li><a href="https://www.designbetter.co/">Design Better</a></li>
-                    <li><a href="https://www.typewolf.com/">Type Wolf</a></li>
-                    <li><a href="https://publicdomainreview.org/">Public Domain Review</a></li>
-                    <li><a href="http://www.artofthetitle.com/">Art of the Title</a></li>
-                    <li><a href="#">Creative Applications</a></li>
-                    <li><a href="#">The Brand Identity</a></li>
-                    <li><a href="#">Built By Civilization</a></li>
-                    <li><a href="#">Beetle Crap</a></li>
-                </ul>
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>💨</span></span>
+                <a href="https://amzn.to/3xsGjLc" target="_blank" class="resource-name">SPRINT </a>
             </div>
-            <div class="resource-grid">
-                <h4>Projects</h4>
-                <div class="resource-header-line"></div>
-                <ul>
-                    <li><a href="#">Very Slow Movie Player</a></li>
-                    <li><a href="#">Nomadic Tribe</a></li>
-                    <li><a href="#">Dear Data</a></li>
-                </ul>
-            </div>
-            <div class="resource-grid">
-                <h4>Talks</h4>
-                <div class="resource-header-line"></div>
-                <ul>
-                    <li><a href="https://creativemornings.com/">Creative Mornings</a></li>
-                    <li><a href="#">Nomadic Tribe</a></li>
-                    <li><a href="#">Dear Data</a></li>
-                </ul>
-            </div>
-            <div class="resource-grid">
-                <h4>Books</h4>
-                <div class="resource-header-line"></div>
-                <ul>
-                    <li><a href="http://www.amazon.com/Systems-Graphic-Systeme-Visuele-Gestaltung/dp/3721201450" >Grid Systems in Graphic Design</a></li>
-                    <li><a href="http://www.amazon.com/Elements-Typographic-Style-Robert-Bringhurst/dp/0881792063" >Elements of Typographic Style</a></li>
-                    <li><a href="http://www.amazon.com/Design-Real-World-Ecology-Social/dp/0897331532" >Design for the Real World</a></li>
-                    <li><a href="https://www.amazon.com/New-Typography-Weimar-Now-Criticism/dp/0520250125" >The New Typography</a></li>
-                    <li><a href="http://www.amazon.com/Cradle-Remaking-Way-Make-Things/dp/0865475873" >Cradle</a></li>
-                    <li><a href="http://www.amazon.com/Designing-People-Henry-Dreyfuss/dp/1581153120" >Designing for People</a></li>
-                    <li><a href="http://www.amazon.com/Paul-Rand-Designer%60s-Art-Mr/dp/0300082827" >A Designer's Art</a></li>
-                    <li><a href="http://www.amazon.com/Art-Looking-Sideways-Alan-Fletcher/dp/0714834491" >The Art of Looking Sideways</a></li>
-                    <li><a href="http://www.amazon.com/Visual-Display-Quantitative-Information-2nd/dp" >Tufte's TVDQI</a></li>
-                    <li><a href="https://www.amazon.com/Visual-Explanations-Quantities-Evidence-Narrative/dp/0961392126" >Visual Explanations</a></li>
-                    <li><a href="https://www.amazon.com/Envisioning-Information-Edward-R-Tufte/dp/0961392118" >Envisioning Information</a></li>
-                    <li><a href="https://www.amazon.com/Interaction-Color-Anniversary-Josef-Albers/dp/0300179359" >Interaction of Color</a></li>
-                    <li><a href="http://www.amazon.com/Designing-Digital-Age-Human-Centered-Products/dp/0470229101" >Designing for The Digital Age</a></li>
-                    <li><a href="https://www.amazon.com/Dieter-Rams-Little-Design-Possible/dp/0714849189" >As Little Design as Possible</a></li>
-                    <li><a href="https://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351" >Modular Web Design</a></li>
-                    <li><a href="https://www.amazon.com/Ways-Seeing-Based-Television-Penguin/dp/0140135154" >Ways of Seeing</a></li>
-                    <li><a href="http://www.amazon.com/Design-Everyday-Things-Donald-Norman/dp/0465067107" >The Design for Everyday Things</a></li>
-                    <li><a href="https://www.metmuseum.org/art/metpublications/titles-with-full-text-online?searchtype=F" >Met Museum Art Books</a></li>
-                    <li><a href="https://www.amazon.com/Designing-Data-Improving-Experience-Testing/dp/1449334830" >Designing with Data</a></li>
-                    <li><a href="https://mitpress.mit.edu/books/things-talk" >Things that Talk</a></li>
-                    <li><a href="http://readings.design/index" >Graphic Design Readings</a></li>
-                    <li><a href="https://www.amazon.com/Go-Kidds-Guide-Graphic-Design/dp/1523515651">Go: A Kidd's Guide to Graphic Design</a></li>
-                </ul>
-            </div>
-            <div class="resource-grid">
-                    <h4>Resources</h4>
-                    <div class="resource-header-line"></div>
-                <ul>
-                    <li><a href="https://arxiv.org/">arXiv.org</a></li>
-                    <li><a href="https://letterformarchive.org/" >Letterform Archive</a></li>
-                    <li><a href="http://cylinders.library.ucsb.edu/index.php" >UCSB Library Cylinder Recordings</a></li>
-                    <li><a href="https://publicdomainreview.org/collections/" >Public Domain Review Resources</a></li>
-                    <li><a href="http://www.designkit.org/" >IDEO Design Kit</a></li>
-                    <li><a href="http://dictionaryofonlinebehavior.com/" >Dictionary of Online Behavior</a></li>
-                    <li><a href="https://www.w3.org/WAI/intro/wcag" >Web Content Accessibility Guidelines</a></li>
-                    <li><a href="http://eloquentjavascript.net/" >Eloquent Javascript</a></li>
-                    <li><a href="https://css-tricks.com/" >CSS Tricks</a></li>
-                    <li><a href="https://trends.google.com/trends/" >Google Trends</a></li>
-                    <li><a href="https://mitpress.mit.edu/" >MIT Press</a></li>
-                    <li><a href="https://pudding.cool/" >The Pudding</a></li>
-                    <li><a href="http://flowingdata.com/" >Flowing Data</a></li>
-                    <li><a href="https://www.reddit.com/r/dataisbeautiful/" >Data is Beautiful</a></li>
-                    <li><a href="https://www.counter-print.co.uk/" >Counter Print</a></li>
-                    <li><a href="https://www.gridlover.net/try" >Grid Lover</a></li>
-                    <li><a href="https://fontawesome.com/" >Font Awesome</a></li>
-                    <li><a href="https://beta.observablehq.com/" >Observable</a></li>
-                    <li><a href="https://analytics.google.com/" >Google Analytics</a></li>
-                    <li><a href="https://www.skillshare.com/" >Skillshare</a></li>
-                    <li><a href="https://zzz.dog/">ZDog</a></li>
-                    <li><a href="https://www.figma.com/resources/">Figma Resources</a></li>
-                    <li><a href="https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19/">Advanced Robotics Lectures</a></li>
-                    <li><a href="https://www.uscareerinstitute.edu/blog/kids-computer-essentials-graphic-design">Kids' Computer Essentials: Graphic Design</a></li>
-                    
-                </ul>
-            </div>
-            <div class="resource-grid">
-                    <h4>Design Systems</h4>
-                    <div class="resource-header-line"></div>
-                    <ul>
-                        <li><a href="https://material.io/design/" >Google Material Design</a></li>
-                        <li><a href="https://design-system.service.gov.uk/" >Gov.UK</a></li>
-                        <li><a href="https://airbnb.design/building-a-visual-language/" >AirBnB</a></li>
-                        <li><a href="https://www.ibm.com/design/language/" >IBM</a></li>
-                        <li><a href="https://design.firefox.com/photon/welcome.html" >Photon</a></li>
-                        <li><a href="http://www.bbc.co.uk/gel/" >BBC</a></li>
-                        <li><a href="https://ux.mailchimp.com/patterns" >Mailchimp</a></li>
-                        <li><a href="https://fluent.microsoft.com/" >Microsoft</a></li>
-                        <li><a href="https://polaris.shopify.com/" >Shopify</a></li>
-                        <li><a href="https://design.trello.com/" >Trello</a></li>
-                        <li><a href="http://rizzo.lonelyplanet.com/styleguide/design-elements/colours" >Lonely Planet</a></li>
-                        <li><a href="https://www.lightningdesignsystem.com/" >Salesforce</a></li>
-                        <li><a href="https://www.mapbox.com/base/styling/forms/" >Base</a></li>
-                        <li><a href="https://atlassian.design/" >Atlassian</a></li>
-                        <li><a href="http://solid.buzzfeed.com/" >Buzzfeed</a></li>
-                        <li><a href="https://primer.style/" >Github</a></li>
-                        <li><a href="https://garden.zendesk.com/" >Zendesk</a></li>
-                        <li><a href="https://evergreen.segment.com/" >Segment</a></li>
-                        <li><a href="https://thumbprint.design/" >Thumbtack</a></li>
-                    </ul>
-                </div>
-            <div class="resource-grid">
-                    <h4>Inspiration</h4>
-                    <div class="resource-header-line"></div>
-                    <ul>
-                        <li><a href="https://www.awwwards.com/" >AWWWARDS</a></li>
-                        <li><a href="http://booooooom.com/" >BOOOOOOOM</a></li>
-                        <li><a href="http://underconsideration.com/" >Under Consideration</a></li>
-                        <li><a href="https://eyeondesign.aiga.org/" >AIGA Eye on Design</a></li>
-                        <li><a href="https://www.itsnicethat.com/" >It's Nice That</a></li>
-                        <li><a href="https://www.domestika.org/en/blog" >Domestika</a></li>
-                        <li><a href="http://nfgraphics.com/" >Nice Fucking Graphics</a></li>
-                        <li><a href="https://design-milk.com/" >Design Milk</a></li>
-                        <li><a href="https://kottke.org/" >Kottke</a></li>
-                        <li><a href="http://motionographer.com/" >Motionographer</a></li>
-                        <li><a href="http://prostheticknowledge.tumblr.com/" >Prosthetic Knowledge</a></li>
-                        <li><a href="http://www.swiss-miss.com/" >Swiss Miss</a></li>
-                        <li><a href="http://www.casualoptimist.com/" >The Casual Optimist</a></li>
-                        <li><a href="https://www.designerlynx.co/" >Designer Lynx</a></li>
-                        <li><a href="https://www.designbetter.co/" >Design Better</a></li>
-                        <li><a href="https://www.typewolf.com/" >Type Wolf</a></li>
-                        <li><a href="https://publicdomainreview.org/" >Public Domain Review</a></li>
-                        <li><a href="http://www.artofthetitle.com/" >Art of the Title</a></li>
-                        <li><a href="http://www.creativeapplications.net/" >Creative Applications Network</a></li>
-                        <li><a href="https://the-brandidentity.com/" >The Brand Identity</a></li>
-                        <li><a href="https://builtbycivilization.com/" >Built by Civilization</a></li>
-                    </ul>
-            </div>
-            <div class="resource-grid">
-                    <h4>People</h4>
-                    <div class="resource-header-line"></div>
-                    <ul>
-                        <li><a href="https://mitpress.mit.edu/books/muriel-cooper">Muriel Cooper</a></li>
-                        <li><a href="http://www.hellerbooks.com/docs/about.html" >Steven Heller</a></li>
-                        <li><a href="https://www.olafureliasson.net/" >Olafur Eliasson</a></li>
-                        <li><a href="https://jnd.org/" >Don Norman</a></li>
-                        <li><a href="https://www.edwardtufte.com/" >Edward Tufte</a></li>
-                        <li><a href="http://elupton.com/" >Ellen Lupton</a></li>
-                        <li><a href="http://reas.com/" >Casey Reas</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Neil_Harbisson" >Neil Harbisson</a></li>
-                        <li><a href="http://www.alicerawsthorn.com/" >Alice Rawsthorn</a></li>
-                        <li><a href="https://jakeknapp.com/sprint" >Jake Knapp</a></li>
-                        <li><a href="http://feltron.com/" >Nicholas Felton</a></li>
-                        <li><a href="http://www.johannadrucker.net/" >Johanna Drucker</a></li>
-                        <li><a href="https://www.miltonglaser.com/" >Milton Glaser</a></li>
-                    </ul>
-            </div>
-            <div class="resource-grid">
-                <h4>Groups</h4>
-                <div class="resource-header-line"></div>
-                <ul>
-                    <li><a href="https://studio-index.co/">Studio Index</a></li>
-                    <li><a href="https://www.nngroup.com/" >Nielsen Norman Group</a></li>
-                    <li><a href="http://oma.eu/" >OMA</a></li>
-                    <li><a href="https://peopleofcraft.com" >People of Craft</a></li>
-                    <li><a href="https://www.tdc.org/" >Type Directors Club</a></li>
-                    <li><a href="http://polygraph.cool/" >Polygraph</a></li>
-                    <li><a href="https://www.experimentaljetset.nl/" >Experimental Jetset</a></li>
-                    <li><a href="http://nytlabs.com/" >New York Times R&D</a></li>
-                    <li><a href="http://www.graphicthoughtfacility.com/" >Graphic Thought Facility</a></li>
-                </ul>
-            </div>
-            <div class="resource-grid">
-                    <h4>Projects</h4>
-                    <div class="resource-header-line"></div>
-                <ul>
-                    <li><a href="http://openframeworks.cc/">OpenFrameworks</a></li>
-                    <li><a href="http://aescripts.com/bodymovin/">Bodymovin</a></li>
-                    <li><a href="https://p5js.org/">P5.js</a></li>
-                    <li><a href="http://soulwire.github.io/sketch.js/">Sketch.js</a></li>
-                    <li><a href="https://animejs.com/">Anime.js</a></li>
-                    <li><a href="https://d3js.org/">D3.js</a></li>
-                    <li><a href="https://framer.com/">Framer</a></li>
-                    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
-                    <li><a href="https://processing.org/">Processing</a></li>
-                </ul>
-            </div>
-            <div class="resource-grid">
-                <h4>Frameworks</h4>
-                <div class="resource-header-line"></div>
-            <ul>
-                <li><a href="http://rocs.hu-berlin.de/explorables/">Complexity Explorables</a></li>
-                <li><a href="https://supermedium.com/">SUPERMEDIUM</a></li>
-                <li><a href="https://www.beeple-crap.com/">Beeple Crap</a></li>
-                <li><a href="https://aframe.io/aframe-registry">A-Frame Registry</a></li>
-                <li><a href="http://datavizproject.com/">The Data Viz Project</a></li>
-                <li><a href="https://www.designsystems.com/">Design Systems by Figma</a></li>
-                <li><a href="https://thereviewindex.com/us">The Review Index</a></li>
-                <li><a href="https://www.instagram.com/amapaday/">A Map a Day</a></li>
-                <li><a href="https://data.fivethirtyeight.com/">FiveThirtyEight</a></li>
-                <li><a href="https://thecodingtrain.com/">The Coding Train</a></li>
-                <li><a href="https://generated.space/">Generated Space</a></li>
-            </ul>
-        </div>
 
-            <div class="grid-divider"></div>
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🎨</span></span>
+                <a href="https://amzn.to/4bkdOwP" target="_blank" class="resource-name">Interaction of Color </a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🗣️</span></span>
+                <a href="https://amzn.to/3XCp6JF" target="_blank" class="resource-name">The Art of Looking Sideways</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🧐</span></span>
+                <a href="https://amzn.to/3XGBSXI" target="_blank" class="resource-name">Thinking Fast and Slow</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>⬛️</span></span>
+                <a href="https://amzn.to/4bkegev" target="_blank" class="resource-name">Grid Systems in Graphic Design</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>✨</span></span>
+                <a href="https://amzn.to/4eCOSnf" target="_blank" class="resource-name">A *New* Program for Graphic Design</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>👌</span></span>
+                <a href="https://amzn.to/3VHKL0x" target="_blank" class="resource-name">As Little Design as Possible</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🔑</span></span> 
+                <a href="https://amzn.to/45JnvUy" target="_blank"class="resource-name">Elements of Typographic Style</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>👁️</span></span>
+                <a href="https://amzn.to/3VJlaUO" target="_blank"class="resource-name">Ways of Seeing</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🌌</span></span>
+                <a href="https://amzn.to/3VI5amj" target="_blank"class="resource-name">Universal Principles of UX</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>📊</span></span>
+                <a href="https://amzn.to/45FbQpC" target="_blank"class="resource-name">Visual Display of Quantitative Information</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>👶</span></span>
+                <a href="https://amzn.to/3W0ucOU" target="_blank"class="resource-name">Cradle to Cradle</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>👯</span></span>
+                <a href="https://amzn.to/3xzH4BZ" target="_blank"class="resource-name">User Friendly</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🍑</span></span>
+                <a href="https://amzn.to/4cDphc5" target="_blank"class="resource-name">Naked Statistics</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🥇</span></span>
+                <a href="https://amzn.to/45NUdnV" target="_blank"class="resource-name">Zero to One</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🕴️</span></span>
+                <a href="https://amzn.to/3VYYOA5" target="_blank"class="resource-name">The User Experience Team of One</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>📣</span></span>
+                <a href="https://amzn.to/3xx69xB" target="_blank"class="resource-name">Articulating Design Decisions</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🗓️</span></span>
+                <a href="https://amzn.to/3xAUrSr" target="_blank"class="resource-name">A Project Guide to UX Design</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🐍</span></span>
+                <a href="https://amzn.to/45Y7L0d" target="_blank"class="resource-name">Graphesis</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>👀</span></span>
+                <a href="https://amzn.to/45Fc0xe" target="_blank"class="resource-name">Envisioning Information</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>📀</span></span>
+                <a href="https://amzn.to/3VV9FuV" target="_blank"class="resource-name">Designing for the Digital Age</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🕷️</span></span>
+                <a href="https://amzn.to/4cEqeAM" target="_blank"class="resource-name">Modular Web Design</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🧘🏻</span></span>
+                <a href="https://amzn.to/3KZzBz9" target="_blank"class="resource-name">Digital Minimalism</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🦄</span></span>
+                <a href="https://amzn.to/3VECwT6" target="_blank"class="resource-name">The Architectrure of Happiness</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🙊</span></span>
+                <a href="https://amzn.to/3ztqO64" target="_blank"class="resource-name">Things that Talk</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🔮</span></span>
+                <a href="https://amzn.to/3L0OPUz" target="_blank"class="resource-name">The Responsible Object</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🦠</span></span>
+                <a href="https://amzn.to/3XGqV8H" target="_blank"class="resource-name">Microinteractions</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>👁️‍🗨️</span></span>
+                <a href="https://amzn.to/4cuLxF0" target="_blank"class="resource-name">Visual Explanations</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🔫</span></span>
+                <a href="https://amzn.to/3KZVM8D" target="_blank"class="resource-name">Set Phasers on Stun</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="book">
+                <span class="img"><span>🚀</span></span>
+                <a href="https://amzn.to/3W1vVmM" target="_blank"class="resource-name">Rocket Surgery Made Easy</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>👍</span></span>
+                <a href="https://www.itsnicethat.com" target="_blank"class="resource-name">It's Nice That</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>🧑‍💻</span></span>
+                <a href="https://www.creativeapplications.net" target="_blank"class="resource-name">Creative Applications</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>👨‍🎓</span></span>
+                <a href="https://publicdomainreview.org" target="_blank"class="resource-name">The Public Domain Review</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>👽</span></span>
+                <a href="https://www.tensorflow.org" target="_blank"class="resource-name">TensorFlow</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>👓</span></span>
+                <a href="https://readings.design/index" target="_blank"class="resource-name">Graphic Design Readings</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>⚪️</span></span>
+                <a href="https://reas.com" target="_blank"class="resource-name">Casey Reas</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>😍</span></span>
+                <a href="https://www.reddit.com/r/dataisbeautiful/" target="_blank"class="resource-name">r/dataisbeautiful</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>🆔</span></span>
+                <a href="https://the-brandidentity.com" target="_blank"class="resource-name">The Brand Identity</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>🔠</span></span>
+                <a href="https://letterformarchive.org" target="_blank"class="resource-name">Letterform Archive</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🧰</span></span>
+                <a href="https://www.designkit.org" target="_blank"class="resource-name">IDEO Design Kit</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🐶</span></span>
+                <a href="https://css-tricks.com" target="_blank"class="resource-name">CSS Tricks</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>💦</span></span>
+                <a href="https://flowingdata.com" target="_blank"class="resource-name">Flowing Data</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>📈</span></span>
+                <a href="https://trends.google.com/trends/" target="_blank"class="resource-name">Google Trends</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🧑‍💻</span></span>
+                <a href="https://news.ycombinator.com" target="_blank"class="resource-name">Hacker News</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🔪</span></span>
+                <a href="https://www.counter-print.co.uk" target="_blank"class="resource-name">Counter Print</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🐣</span></span>
+                <a href="https://eloquentjavascript.net" target="_blank"class="resource-name">Eloquent Javascript</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🧑‍⚖️</span></span>
+                <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank"class="resource-name">Web Content Accessibility Guidelines</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🟡</span></span>
+                <a href="https://oercommons.org" target="_blank"class="resource-name">OER Commons</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>😈</span></span>
+                <a href="https://www.deceptive.design" target="_blank"class="resource-name">Deceptive Patterns</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🐵</span></span>
+                <a href="https://www.blender.org" target="_blank"class="resource-name">Blender</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🖊️</span></span>
+                <a href="https://mitpress.mit.edu" target="_blank"class="resource-name">MIT Press</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>🇨🇭</span></span>
+                <a href="https://www.swiss-miss.com" target="_blank"class="resource-name">Swiss Miss</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>🍮</span></span>
+                <a href="https://pudding.cool" target="_blank"class="resource-name">The Pudding</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🤓</span></span>
+                <a href="https://m3.material.io" target="_blank"class="resource-name">Google Material Design</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>📘</span></span>
+                <a href="https://design.facebook.com/toolsandresources/" target="_blank"class="resource-name">Design at Meta</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🍎</span></span>
+                <a href="https://developer.apple.com/design/human-interface-guidelines" target="_blank"class="resource-name">Apple Human Interface Guidelines</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🌐</span></span>
+                <a href="https://design-system.w3.org/" target="_blank"class="resource-name">W3C Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>⚫️</span></span>
+                <a href="https://carbondesignsystem.com" target="_blank" class="resource-name">IBM Carbon Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🇬🇧</span></span>
+                <a href="https://design-system.service.gov.uk" target="_blank" class="resource-name">GOV.UK Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🪟</span></span>
+                <a href="https://fluent2.microsoft.design" target="_blank" class="resource-name">Microsoft Fluent 2</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🐙</span></span>
+                <a href="https://primer.style" target="_blank" class="resource-name">Github Primer Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🦉</span></span>
+                <a href="https://wise.design" target="_blank" class="resource-name">Wise Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🐜</span></span>
+                <a href="https://ant.design" target="_blank" class="resource-name">Ant Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🧩</span></span>
+                <a href="https://eui.elastic.co/#/" target="_blank" class="resource-name">Elastic UI</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🐻‍❄️</span></span>
+                <a href="https://polaris.shopify.com" target="_blank" class="resource-name">Shopify Polaris</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🌧️</span></span>
+                <a href="https://www.bbc.co.uk/gel" target="_blank" class="resource-name">BBC Global Experience Language</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>📌</span></span>
+                <a href="https://thumbprint.design" target="_blank" class="resource-name">Thumbprint Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🏔️</span></span>
+                <a href="https://atlassian.design" target="_blank" class="resource-name">Atlassian Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🚘</span></span>
+                <a href="https://base.uber.com" target="_blank" class="resource-name">Uber Base Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🎵</span></span>
+                <a href="https://spotify.design" target="_blank" class="resource-name">Spotify Design</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>Ⓜ️</span></span>
+                <a href="https://mui.com" target="_blank" class="resource-name">MUI React Component Library</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>❓</span></span>
+                <a href="https://www.figma.com/community/file/1022238667743756269" target="_blank" class="resource-name">Quora QBlocks UI Kit</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🦊</span></span>
+                <a href="https://acorn.firefox.com/latest/acorn-aRSAh0Sp" target="_blank" class="resource-name">Firefox Acorn Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🌱</span></span>
+                <a href="https://evergreen.segment.com" target="_blank" class="resource-name">Segment's Evergreen Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🏨</span></span>
+                <a href="https://booking.design" target="_blank" class="resource-name">Booking.com Design</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🩻</span></span>
+                <a href="https://nordhealth.design" target="_blank" class="resource-name">Nord Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🌎</span></span>
+                <a href="https://uikit.wfp.org/docs/index.html?path=/docs/getting-started-intro--page" target="_blank" class="resource-name">World Food Program UI Kit</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>💜</span></span>
+                <a href="https://www.thesigma.co/designsystem" target="_blank" class="resource-name">Sigma Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>🚘</span></span>
+                <a href="https://design.volvocars.com" target="_blank" class="resource-name">Volvo Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>⚡️</span></span>
+                <a href="https://www.lightningdesignsystem.com" target="_blank" class="resource-name">Salesforce Lightning Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>💹</span></span>
+                <a href="https://tdesign.tencent.com/index-en" target="_blank" class="resource-name">Tencent Enterprise Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>📎</span></span>
+                <a href="https://paste.twilio.design/" target="_blank" class="resource-name">Twilio Paste Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="design-system">
+                <span class="img"><span>💼</span></span>
+                <a href="https://www.delldesignsystem.com/" target="_blank" class="resource-name">Dell Design System</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>👥</span></span>
+                <a href="https://www.nngroup.com" target="_blank" class="resource-name">Nielsen Norman Group</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🛒</span></span>
+                <a href="https://baymard.com" target="_blank" class="resource-name">Baymard Institute</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🟢</span></span>
+                <a href="https://amzn.to/3zdiFmc" target="_blank" class="resource-name">Design, Play, Change</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🌝</span></span>
+                <a href="https://observablehq.com" target="_blank" class="resource-name">Observable</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>💌</span></span>
+                <a href="https://gridlover.net/try" target="_blank" class="resource-name">Grid Lover</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>📓</span></span>
+                <a href="https://www.dictionaryofonlinebehavior.com" target="_blank" class="resource-name">Dictionary of Online Behavior</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>😴</span></span>
+                <a href="https://zzz.dog" target="_blank" class="resource-name">ZDog</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🌹</span></span>
+                <a href="https://d3js.org" target="_blank" class="resource-name">D3.js</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🗃️</span></span>
+                <a href="https://openframeworks.cc" target="_blank" class="resource-name">openFrameworks</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🤗</span></span>
+                <a href="https://openframeworks.cc" target="_blank" class="resource-name">Hugging Face</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🏃‍♂️‍➡️</span></span>
+                <a href="https://gsap.com" target="_blank" class="resource-name">GSAP</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🐛</span></span>
+                <a href="https://processing.org" target="_blank" class="resource-name">Processing</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>😘</span></span>
+                <a href="https://cari.institute" target="_blank" class="resource-name">Consumer Aesthetics Research Institute</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🍬</span></span>
+                <a href="https://www.figma.com/resource-library/" target="_blank" class="resource-name">Figma Resource Library</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🌳</span></span>
+                <a href="https://www.interaction-design.org" target="_blank" class="resource-name">Interaction Design Foundation</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🏃‍♀️</span></span>
+                <a href="https://runwayml.com" target="_blank" class="resource-name">Runway ML</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="research">
+                <span class="img"><span>🐞</span></span>
+                <a href="https://p5js.org" target="_blank" class="resource-name">P5.js</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>🏆</span></span>
+                <a href="https://www.awwwards.com" target="_blank" class="resource-name">AWWWARDS</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>💭</span></span>
+                <a href="https://graphicthoughtfacility.com/projects/selected/" target="_blank" class="resource-name">Graphic Thought Facility</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>🕵️</span></span>
+                <a href="https://polygraph.cool" target="_blank" class="resource-name">Polygraph</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>😳</span></span>
+                <a href="https://refero.design" target="_blank" class="resource-name">Refero</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>🧓</span></span>
+                <a href="https://www.edwardtufte.com/tufte/" target="_blank" class="resource-name">Edward Tufte</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>👷</span></span>
+                <a href="https://rd.nytimes.com" target="_blank" class="resource-name">New York Times R&D</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>🏗️</span></span>
+                <a href="https://www.oma.com" target="_blank" class="resource-name">OMA</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>😀</span></span>
+                <a href="http://www.hellerbooks.com/docs/about.html" target="_blank" class="resource-name">Steven Heller</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>⛺️</span></span>
+                <a href="https://aframe.io/aframe-registry/" target="_blank" class="resource-name">A-Frame Registry</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>📱</span></span>
+                <a href="https://mobbin.com" target="_blank" class="resource-name">Mobbin</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>🪲</span></span>
+                <a href="https://www.beeple-crap.com" target="_blank" class="resource-name">Beeple Crap</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🥲</span></span>
+                <a href="https://lwlies.com" target="_blank" class="resource-name">Little White Lies</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>🧑‍🎨</span></span>
+                <a href="https://www.juxtapoz.com" target="_blank" class="resource-name">Juxtapoz</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>🤖</span></span>
+                <a href="http://zach.li" target="_blank" class="resource-name">Zach Lieberman</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>🧑‍🎨</span></span>
+                <a href="https://www.juxtapoz.com" target="_blank" class="resource-name">Juxtapoz</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>🌄</span></span>
+                <a href="https://generated.space" target="_blank" class="resource-name">Generated Space</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>💥</span></span>
+                <a href="https://www.booooooom.com" target="_blank" class="resource-name">BOOOOOOOM</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>⭐️</span></span>
+                <a href="https://www.pentagram.com" target="_blank" class="resource-name">Pentagram</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>🤔</span></span>
+                <a href="https://underconsideration.com" target="_blank" class="resource-name">Under Consideration</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>📝</span></span>
+                <a href="http://www.dear-data.com/theproject" target="_blank" class="resource-name">Dear Data</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>☺️</span></span>
+                <a href="https://youtu.be/RlQEoJaLQRA?si=8-t27vIHYg8-JiMo" target="_blank" class="resource-name">Don Norman: Good Design Talk</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🎮</span></span>
+                <a href="https://youtu.be/AxFzf6yIfcc?si=7c9QNxCQSfHx4M2w" target="_blank" class="resource-name">Jonathan Blow: Game Design Talk</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🤔</span></span>
+                <a href="https://youtu.be/9gM8K4ooavY?si=yIRBlU_NNmmgI2E3" target="_blank" class="resource-name">Jamal Nichols: Mental Models Talk</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🌞</span></span>
+                <a href="https://creativemornings.com" target="_blank" class="resource-name">Creative Mornings</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🙂</span></span>
+                <a href="https://youtu.be/atn22-bmTPU?si=UramLQO-cSgF2Ozd" target="_blank" class="resource-name">Paula Scher: Great Design is Serious</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🚂</span></span>
+                <a href="https://thecodingtrain.com" target="_blank" class="resource-name">The Coding Train</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>👾</span></span>
+                <a href="https://hackaday.com" target="_blank" class="resource-name">HACKADAY</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🐇</span></span>
+                <a href="https://www.producthunt.com" target="_blank" class="resource-name">Product Hunt</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🐵</span></span>
+                <a href="https://blog.vaexperience.com/ux-resources/experience-designed-podcast/" target="_blank" class="resource-name">Experience Designed Podcast</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🔊</span></span>
+                <a href="https://youtu.be/YTRIeWI0EGQ?si=2FJ2AJvYK595laJ6" target="_blank" class="resource-name">Rochelle King: Data and Design Talk</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>👨‍🎨</span></span>
+                <a href="https://youtu.be/LCfBYE97rFk?si=IvIXNY0pCvCou8Rn" target="_blank" class="resource-name">Abstract: The Art of Design</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>📖</span></span>
+                <a href="https://www.smashingmagazine.com" target="_blank" class="resource-name">Smashing Magazine</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🚜</span></span>
+                <a href="https://youtu.be/RanfCx18gi4?si=DozmmsGj3K1aZIkQ" target="_blank" class="resource-name">Michael Bierut: Design Indaba Talk</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🧢</span></span>
+                <a href="https://youtu.be/5MYItwY_LBs?si=JfAm-Gcq7UUeeCpj" target="_blank" class="resource-name">Aaron James Draplin: Awwwards Talk</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>💁🏻‍♀️</span></span>
+                <a href="https://youtu.be/1DWur2dTbjg?si=iLO2Ixu3isQ54FvQ" target="_blank" class="resource-name">Hah Phan: Product Innovation Interview</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🦾</span></span>
+                <a href="https://youtu.be/PW-w1yVVRXc?si=fVsUWCk7D7RZYbZz" target="_blank" class="resource-name">John Maeda's Cozy AI Kitchen</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>😁</span></span>
+                <a href="https://www.youtube.com/@lennyspodcast" target="_blank" class="resource-name">Lenny's Podcast</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🎙️</span></span>
+                <a href="https://www.youtube.com/playlist?list=PLJOFJ3Ok_idv78lCtzYaKUiO07CC_rU0A" target="_blank" class="resource-name">NN/g UX Podcast</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🦸</span></span>
+                <a href="https://www.ideou.com/pages/creative-confidence-podcast" target="_blank" class="resource-name">IDEO Creative Confidence Podcast</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🫣</span></span>
+                <a href="https://www.npr.org/podcasts/510307/invisibilia" target="_blank" class="resource-name">99% Invisible Podcast</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🐢</span></span>
+                <a href="https://www.alieward.com/ologies" target="_blank" class="resource-name">Ologies</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>😶‍🌫️</span></span>
+                <a href="https://hiddenbrain.org" target="_blank" class="resource-name">Hidden Brain</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>👤</span></span>
+                <a href="https://99percentinvisible.org" target="_blank" class="resource-name">Invisibilia</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>❗️</span></span>
+                <a href="https://www.iheart.com/podcast/105-stuff-you-should-know-26940277/" target="_blank" class="resource-name">Stuff You Should Know</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>📻</span></span>
+                <a href="https://radiolab.org" target="_blank" class="resource-name">Radiolab</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🧬</span></span>
+                <a href="https://kurzgesagt.org" target="_blank" class="resource-name">Kurzgesagt - In a Nutshell</a>
+            </div>
+
+            <div class="grid-item resource-item filter-item show-flex" data-filter="media">
+                <span class="img"><span>🧑‍💻</span></span>
+                <a href="https://www.freecodecamp.org" target="_blank" class="resource-name">Free Code Camp</a>
+            </div>
+            
+            <div class="grid-item resource-item filter-item show-flex" data-filter="inspiration">
+                <span class="img"><span>🧱</span></span>
+                <a href="https://builtbycivilization.com" target="_blank" class="resource-name">Built By Civilization</a>
+            </div>
+
+            <div class="grid-padding"></div>
             
         </div>
     
@@ -335,10 +854,30 @@
     </div>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const existingDiv = document.getElementById('resourceFilter');
+
+    if (existingDiv) {
+        // Check if nextElementSibling exists
+        let nextElement = existingDiv.nextElementSibling;
+        if (nextElement) {
+            console.log('Next element found:', nextElement);
+            // Perform operations with nextElement
+        } else {
+            console.log('Next element does not exist.');
+        }
+    } else {
+        console.error('Existing div not found.');
+    }
+});
+    </script>
+
+    <script>
 
             var hamburger = document.querySelector(".hamburger");
             var mobileHeader = document.getElementById("mobileHeader");
             var mobileMenu = document.getElementById("mobileMenu");
+            var resourceFilter = document.getElementById("resourceFilter");
             // On click
             hamburger.addEventListener("click", function() {
                 // Toggles
@@ -347,8 +886,154 @@
                 mobileHeader.classList.toggle("expand-header");
                 mobileMenu.classList.toggle("hidden");
                 mobileMenu.classList.toggle("visible");
+                resourceFilter.classList.toggle("hide");
             });
         
+    </script>
+
+<script>
+
+    var filterAll = document.getElementById("filterAll");
+    var filterBooks = document.getElementById("filterBooks");
+    var filterSystems = document.getElementById("filterSystems");
+    var filterInspiration = document.getElementById("filterInspiration");
+    var filterMedia = document.getElementById("filterMedia");
+    var filterResearch = document.getElementById("filterResearch");
+
+	filterAll.addEventListener("click", function() {
+
+		if (filterAll.classList.contains("filter-active")) {
+			console.log("Filter All has been clicked while it is active");
+		} else if (filterAll.classList.contains("filter-default")) {
+			console.log("Filter All has been activated");
+			filterAll.classList.remove("filter-default");
+			filterAll.classList.add("filter-active");
+            filterBooks.classList.remove("filter-active");
+			filterBooks.classList.add("filter-default");
+			filterSystems.classList.remove("filter-active");
+			filterSystems.classList.add("filter-default");
+			filterInspiration.classList.remove("filter-active");
+			filterInspiration.classList.add("filter-default");
+			filterMedia.classList.remove("filter-active");
+			filterMedia.classList.add("filter-default");
+            filterResearch.classList.remove("filter-active");
+			filterResearch.classList.add("filter-default");
+		}
+	});
+
+	filterBooks.addEventListener("click", function() {
+
+		if (filterBooks.classList.contains("filter-active")) {
+			console.log("Filter Books has been clicked while it is active");
+
+		} else if (filterBooks.classList.contains("filter-default")) {
+			console.log("Filter Books has been activated");
+
+			filterBooks.classList.remove("filter-default");
+			filterBooks.classList.add("filter-active");
+			filterAll.classList.remove("filter-active");
+			filterAll.classList.add("filter-default");
+			filterSystems.classList.remove("filter-active");
+			filterSystems.classList.add("filter-default");
+			filterInspiration.classList.remove("filter-active");
+			filterInspiration.classList.add("filter-default");
+			filterMedia.classList.remove("filter-active");
+			filterMedia.classList.add("filter-default");
+            filterResearch.classList.remove("filter-active");
+			filterResearch.classList.add("filter-default");
+		}
+
+	});
+
+	filterSystems.addEventListener("click", function() {
+
+		if (filterSystems.classList.contains("filter-active")) {
+			console.log("Filter Systems has been clicked while it is active");
+		} else if (filterSystems.classList.contains("filter-default")) {
+			console.log("Filter Systems has been activated");
+			filterSystems.classList.remove("filter-default");
+			filterSystems.classList.add("filter-active");
+			filterAll.classList.remove("filter-active");
+			filterAll.classList.add("filter-default");
+			filterBooks.classList.remove("filter-active");
+			filterBooks.classList.add("filter-default");
+            filterInspiration.classList.remove("filter-active");
+			filterInspiration.classList.add("filter-default");
+			filterMedia.classList.remove("filter-active");
+			filterMedia.classList.add("filter-default");
+            filterResearch.classList.remove("filter-active");
+			filterResearch.classList.add("filter-default");
+		}
+
+	});
+
+	filterInspiration.addEventListener("click", function() {
+
+		if (filterInspiration.classList.contains("filter-active")) {
+			console.log("Filter Inspiration has been clicked while it is active");
+		} else if (filterInspiration.classList.contains("filter-default")) {
+			console.log("Filter Inspiration has been activated");
+			filterInspiration.classList.remove("filter-default");
+			filterInspiration.classList.add("filter-active");
+			filterAll.classList.remove("filter-active");
+			filterAll.classList.add("filter-default");
+			filterBooks.classList.remove("filter-active");
+			filterBooks.classList.add("filter-default");
+            filterSystems.classList.remove("filter-active");
+			filterSystems.classList.add("filter-default");
+            filterMedia.classList.remove("filter-active");
+			filterMedia.classList.add("filter-default");
+            filterResearch.classList.remove("filter-active");
+			filterResearch.classList.add("filter-default");
+		}
+
+	});
+
+    filterMedia.addEventListener("click", function() {
+
+        if (filterMedia.classList.contains("filter-active")) {
+            console.log("Filter Media has been clicked while it is active");
+        } else if (filterMedia.classList.contains("filter-default")) {
+            console.log("Filter Media has been activated");
+            filterMedia.classList.remove("filter-default");
+            filterMedia.classList.add("filter-active");
+            filterAll.classList.remove("filter-active");
+            filterAll.classList.add("filter-default");
+            filterBooks.classList.remove("filter-active");
+            filterBooks.classList.add("filter-default");
+            filterSystems.classList.remove("filter-active");
+            filterSystems.classList.add("filter-default");
+            filterInspiration.classList.remove("filter-active");
+            filterInspiration.classList.add("filter-default");
+            filterResearch.classList.remove("filter-active");
+            filterResearch.classList.add("filter-default");
+        }
+
+    });
+
+    filterResearch.addEventListener("click", function() {
+
+        if (filterResearch.classList.contains("filter-active")) {
+            console.log("Filter Research has been clicked while it is active");
+        } else if (filterResearch.classList.contains("filter-default")) {
+            console.log("Filter Research has been activated");
+            filterResearch.classList.remove("filter-default");
+            filterResearch.classList.add("filter-active");
+            filterAll.classList.remove("filter-active");
+            filterAll.classList.add("filter-default");
+            filterBooks.classList.remove("filter-active");
+            filterBooks.classList.add("filter-default");
+            filterSystems.classList.remove("filter-active");
+            filterSystems.classList.add("filter-default");
+            filterInspiration.classList.remove("filter-active");
+            filterInspiration.classList.add("filter-default");
+            filterMedia.classList.remove("filter-active");
+            filterMedia.classList.add("filter-default");
+        }
+
+    });
+
+
     </script>
 
 <script src='js/main.js'></script>

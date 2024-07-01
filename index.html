@@ -17,7 +17,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/images.css'>
@@ -29,33 +29,18 @@
         <header id="sideHeader">
 
             <h1>
-                <!-- <span class="loading-anim" id="headerLine">&nbsp; &nbsp; &nbsp;</span> -->
-                I'm Melvin Alvarez — A Product Designer with a background in Visual Design <span style="color:#0074B9;
-                background-image: -webkit-linear-gradient(92deg, #4cf326, #883afe);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                animation: hue 10s infinite linear;
-                -webkit-animation: hue 10s infinite linear;"> ⚘ </span>
+                I'm Melvin Alvarez — <br/> a Product Designer with a background in Visual Design ⚘⚘⚘
             </h1>
 
-            <div class="header-divider"></div>
-
             <ul>
-                    <li id="works">
-                        <a href="https://melvinalvarez.com"> Works <span style="color:#0074B9;
-                            background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-                            background-clip: text;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            animation: hue 10s infinite linear;
-                            -webkit-animation: hue 10s infinite linear;">  ✼ </span> </a>
+                    <li id="works" class="active-menu">
+                        <a href="https://melvinalvarez.com"> Works <span class="anim-rotate"> ✼ </span> </a>
                     </li>
                     <li id="about">
                         <a href="about"> About </a>
                     </li>
                     <li id="process">
-                        Process 
+                        <a href="process"> Process </a> 
                     </li>
                     <li id="resources">
                         <a href="resources"> Resources </a>
@@ -65,13 +50,10 @@
                     </li>
             </ul>
 
-            <div class="header-divider"></div>
-
             <p>
                 You can follow me on 
                 <a href="https://read.cv/melvin">read.cv</a>, </br>
-                <a href="https://github.com/mlvein">github</a>,
-                <a href="https://www.figma.com/@melvin">figma</a>
+                <a href="https://github.com/mlvein">github</a>
                 or
                 <a href="mailto:alvarezmelvin@me.com?subject=Hey Melvin!">email me!</a> 
             </p>
@@ -96,24 +78,21 @@
                 <span class="hamburger-box">
                   <span class="hamburger-inner"></span>
                 </span>
-              </button>  
-
+            </button>  
               <div id="mobileMenu" class="hidden">
                 <ul>
                     <li><a href="about">about</a></li>
-                    <li><a href="#"><span style="text-decoration: line-through; color: #C4C4C4;">process</span></a></li>
+                    <li><a href="process/">process</a></li>
                     <li><a href="resources">resources</a></li>
                     <li><a href="#"><span style="text-decoration: line-through; color: #C4C4C4;">shop</span></a></li>
-                </ul>
-               
+                </ul>   
             </div>
-
         </div>
     
         <div id="masonryGrid">
             <div id="honeypotmoney" class="top-scroll grid-item proj span-wide image-hold" title="Honeypot Money"></div>
             <div id="canunft" class="grid-item proj span-wide image-hold" title="Can you NFT?"></div>
-            <div id="moloch" class="grid-item proj span-wide image-hold" title="Moloch versus Gitcoin Bots"></div>
+            <div id="outclicks" class="grid-item proj lazy span-wide" title="Outclicks.net"></div>
             <div id="hcpp20" class="grid-item proj image-hold span-wide" title="Hacker's Congress Sticker Pack"></div>
             <div id="vac_ui" class="grid-item proj span-wide image-hold" title="Vac Landing Page"></div>
             <div id="vac_logo" class="grid-item proj image-hold" title="Vac.dev logo"></div>
@@ -125,13 +104,13 @@
             <div id="alone_together" class="grid-item proj lazy span-wide" title="Alone Together Sticker Pack"></div>
             <div id="switchdex_ui" class="grid-item proj lazy span-wide image-hold" title="SwitchDex UI"></div>
             <div id="clearpoll" class="grid-item proj lazy span-wide" title="ClearPoll"></div>
-            <div id="outclicks" class="grid-item proj lazy span-wide" title="Outclicks.net"></div>
             <div id="status_principles" class="grid-item proj lazy span-long" title="NoLFaM - Notes on Life's Futilities and Meaninglessness"></div>
             <div id="blockchainbrief" class="grid-item proj lazy" title="Blockchain Brief December 2018 Issue"></div>
             <div id="switchdex_ui_v2" class="grid-item proj lazy span-wide" title="Switchdex UI V2"></div>
             <div id="ecko" class="grid-item proj lazy span-long" title="Ecko the ETH Gecko"></div>
             <div id="bandsinbathroom" class="grid-item proj lazy span-wide" title="Bands in Your Bathroom Landing Page"></div>
             <div id="apollo" class="grid-item proj lazy" title="Apollo illustrations"></div>
+            <div id="moloch" class="grid-item proj span-wide image-hold" title="Moloch versus Gitcoin Bots"></div>
             <div id="threeSixDays_2" class="grid-item proj lazy" title="36 Days of Type - 2"></div>
             <div id="nolfam" class="grid-item proj lazy span-long" title="Notes on Life's Futility and Meaninglessness"></div>
             <div id="dialpad_illus2" class="grid-item proj lazy" title="Dialpad Illustrations"></div>
@@ -167,8 +146,8 @@
         </nav>
 
     </div>
-<script>
 
+<script>
     var elmnt = document.getElementById("honeypotmoney");
 
         function scrollToTop() {

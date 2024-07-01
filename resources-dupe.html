@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDK4C76K5B"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XDK4C76K5B');
+    </script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Resources - Melvin Alvarez</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/images.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/media.css'>
+</head>
+<body>
+    <div class="container">
+        <header id="sideHeader">
+
+            <h1>
+                I'm Melvin Alvarez — A Product Designer with a background in Visual Design ⚘ 
+            </h1>
+
+            <ul>
+                <li id="works">
+                    <a href="https://melvinalvarez.com"> Works </a>
+                </li>
+                <li id="about">
+                    <a href="about"> About </a>
+                </li>
+                <li id="process">
+                    <a href="process"> Process </a> 
+                </li>
+                <li id="resources" class="active-menu">
+                    <a href="resources"> Resources <span class="anim-rotate">  ✼ </span> </a>
+                </li>
+                <li id="shop">
+                    Shop
+                </li>
+            </ul>
+
+            <p>
+                You can follow me on 
+                <a href="https://read.cv/melvin">read.cv</a>, </br>
+                <a href="https://github.com/mlvein">github</a>
+                or
+                <a href="mailto:alvarezmelvin@me.com?subject=Hey Melvin!">email me!</a> 
+            </p>
+        </header>
+
+        <div id="mobileHeader" class="collapse-header">
+            <p>
+                Melvin Alvarez </br>
+                <span class="mobile-line resources"></span> 
+                &nbsp; &nbsp; &nbsp; &nbsp; 
+                <span class="active-gradient">
+                    resources
+                </span>
+            </p>
+            <button class="hamburger hamburger--elastic" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>  
+
+              <div id="mobileMenu" class="hidden">
+                <ul>
+                    <li><a href="https://melvinalvarez.com">works</a></li>
+                    <li><a href="about">about</a></li>
+                    <li><a href="#"><span style="text-decoration: line-through; color: #C4C4C4;">process</span></a></li>
+                    <li><a href="#"><span style="text-decoration: line-through; color: #C4C4C4;">shop</span></a></li>
+                </ul>
+            </div>
+
+        </div>
+    
+        <div id="resourceGrid" class="filter-item-container">
+    
+            <div id="resourceFilter" class="position-fixed filters">
+                <p id="filterAll" class="filter-option filter-active" data-filter="all">All</p>
+                <p id="filterBooks" class="filter-option filter-default" data-filter="book">Books</p>
+                <p id="filterSystems" class="filter-option filter-default" data-filter="design-system">Design Systems</p>
+                <p id="filterInspiration" class="filter-option filter-default" data-filter="inspiration">Inspiration</p>
+                <p id="filterMedia" class="filter-option filter-default" data-filter="media">Media</p>
+                <p id="filterResearch" class="filter-option filter-default" data-filter="research">Research</p>
+            </div>
+
+            <div id="gridPadding" class="grid-padding"></div>
+            
+        </div>
+    
+        <nav id="sideBar">
+                <div id="sidebar-menu">
+                    <ul>
+                        <li id="sidebar-featured" title="featured"></li>
+                        <li id="sidebar-masonry" title="masonry"></li>
+                        <li id="sidebar-list" title="list"></li>
+                    </ul>
+                </div>
+                <div id="sidebar-quote">
+                    <p id="sidebarQuote">Hello birdie, it's okay birdie</p>
+                </div>
+                <div id="sidebar-backtotop" title="Back to top"></div>
+        </nav>
+    </div>
+
+    <script src="js/resource-list.js"></script>
+
+    <script>
+
+            var hamburger = document.querySelector(".hamburger");
+            var mobileHeader = document.getElementById("mobileHeader");
+            var mobileMenu = document.getElementById("mobileMenu");
+            // On click
+            hamburger.addEventListener("click", function() {
+                // Toggles
+                hamburger.classList.toggle("is-active");
+                mobileHeader.classList.toggle("collapse-header");
+                mobileHeader.classList.toggle("expand-header");
+                mobileMenu.classList.toggle("hidden");
+                mobileMenu.classList.toggle("visible");
+            });
+        
+    </script>
+
+<script>
+
+    var filterAll = document.getElementById("filterAll");
+    var filterBooks = document.getElementById("filterBooks");
+    var filterSystems = document.getElementById("filterSystems");
+    var filterInspiration = document.getElementById("filterInspiration");
+    var filterMedia = document.getElementById("filterMedia");
+    var filterResearch = document.getElementById("filterResearch");
+
+	filterAll.addEventListener("click", function() {
+
+		if (filterAll.classList.contains("filter-active")) {
+			console.log("Filter All has been clicked while it is active");
+		} else if (filterAll.classList.contains("filter-default")) {
+			console.log("Filter All has been activated");
+			filterAll.classList.remove("filter-default");
+			filterAll.classList.add("filter-active");
+            filterBooks.classList.remove("filter-active");
+			filterBooks.classList.add("filter-default");
+			filterSystems.classList.remove("filter-active");
+			filterSystems.classList.add("filter-default");
+			filterInspiration.classList.remove("filter-active");
+			filterInspiration.classList.add("filter-default");
+			filterMedia.classList.remove("filter-active");
+			filterMedia.classList.add("filter-default");
+            filterResearch.classList.remove("filter-active");
+			filterResearch.classList.add("filter-default");
+		}
+	});
+
+	filterBooks.addEventListener("click", function() {
+
+		if (filterBooks.classList.contains("filter-active")) {
+			console.log("Filter Books has been clicked while it is active");
+
+		} else if (filterBooks.classList.contains("filter-default")) {
+			console.log("Filter Books has been activated");
+
+			filterBooks.classList.remove("filter-default");
+			filterBooks.classList.add("filter-active");
+			filterAll.classList.remove("filter-active");
+			filterAll.classList.add("filter-default");
+			filterSystems.classList.remove("filter-active");
+			filterSystems.classList.add("filter-default");
+			filterInspiration.classList.remove("filter-active");
+			filterInspiration.classList.add("filter-default");
+			filterMedia.classList.remove("filter-active");
+			filterMedia.classList.add("filter-default");
+            filterResearch.classList.remove("filter-active");
+			filterResearch.classList.add("filter-default");
+		}
+
+	});
+
+	filterSystems.addEventListener("click", function() {
+
+		if (filterSystems.classList.contains("filter-active")) {
+			console.log("Filter Systems has been clicked while it is active");
+		} else if (filterSystems.classList.contains("filter-default")) {
+			console.log("Filter Systems has been activated");
+			filterSystems.classList.remove("filter-default");
+			filterSystems.classList.add("filter-active");
+			filterAll.classList.remove("filter-active");
+			filterAll.classList.add("filter-default");
+			filterBooks.classList.remove("filter-active");
+			filterBooks.classList.add("filter-default");
+            filterInspiration.classList.remove("filter-active");
+			filterInspiration.classList.add("filter-default");
+			filterMedia.classList.remove("filter-active");
+			filterMedia.classList.add("filter-default");
+            filterResearch.classList.remove("filter-active");
+			filterResearch.classList.add("filter-default");
+		}
+
+	});
+
+	filterInspiration.addEventListener("click", function() {
+
+		if (filterInspiration.classList.contains("filter-active")) {
+			console.log("Filter Inspiration has been clicked while it is active");
+		} else if (filterInspiration.classList.contains("filter-default")) {
+			console.log("Filter Inspiration has been activated");
+			filterInspiration.classList.remove("filter-default");
+			filterInspiration.classList.add("filter-active");
+			filterAll.classList.remove("filter-active");
+			filterAll.classList.add("filter-default");
+			filterBooks.classList.remove("filter-active");
+			filterBooks.classList.add("filter-default");
+            filterSystems.classList.remove("filter-active");
+			filterSystems.classList.add("filter-default");
+            filterMedia.classList.remove("filter-active");
+			filterMedia.classList.add("filter-default");
+            filterResearch.classList.remove("filter-active");
+			filterResearch.classList.add("filter-default");
+		}
+
+	});
+
+    filterMedia.addEventListener("click", function() {
+
+        if (filterMedia.classList.contains("filter-active")) {
+            console.log("Filter Media has been clicked while it is active");
+        } else if (filterMedia.classList.contains("filter-default")) {
+            console.log("Filter Media has been activated");
+            filterMedia.classList.remove("filter-default");
+            filterMedia.classList.add("filter-active");
+            filterAll.classList.remove("filter-active");
+            filterAll.classList.add("filter-default");
+            filterBooks.classList.remove("filter-active");
+            filterBooks.classList.add("filter-default");
+            filterSystems.classList.remove("filter-active");
+            filterSystems.classList.add("filter-default");
+            filterInspiration.classList.remove("filter-active");
+            filterInspiration.classList.add("filter-default");
+            filterResearch.classList.remove("filter-active");
+            filterResearch.classList.add("filter-default");
+        }
+
+    });
+
+    filterResearch.addEventListener("click", function() {
+
+        if (filterResearch.classList.contains("filter-active")) {
+            console.log("Filter Research has been clicked while it is active");
+        } else if (filterResearch.classList.contains("filter-default")) {
+            console.log("Filter Research has been activated");
+            filterResearch.classList.remove("filter-default");
+            filterResearch.classList.add("filter-active");
+            filterAll.classList.remove("filter-active");
+            filterAll.classList.add("filter-default");
+            filterBooks.classList.remove("filter-active");
+            filterBooks.classList.add("filter-default");
+            filterSystems.classList.remove("filter-active");
+            filterSystems.classList.add("filter-default");
+            filterInspiration.classList.remove("filter-active");
+            filterInspiration.classList.add("filter-default");
+            filterMedia.classList.remove("filter-active");
+            filterMedia.classList.add("filter-default");
+        }
+
+    });
+
+
+    </script>
+
+<script src='js/main.js'></script>
+</body>
+</html>

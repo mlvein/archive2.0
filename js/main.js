@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		}    
   
 		lazyloadThrottleTimeout = setTimeout(function() {
-		  var scrollTop = window.pageYOffset;
+		  var scrollTop = window.scrollY;
 		  lazyloadImages.forEach(function(img) {
 			  if(img.offsetTop < (window.innerHeight + scrollTop)) {
 				img.src = img.dataset.src;
@@ -86,6 +86,39 @@ document.addEventListener("keyup",function(e){
 	}
 });
 
+//Single Category Filtering
+
+const filters = document.querySelectorAll('.filter-option');
+
+filters.forEach(filter => { 
+
+  filter.addEventListener('click', function() {
+
+    let selectedFilter = filter.getAttribute('data-filter');
+    let itemsToHide = document.querySelectorAll(`.filter-item-container .filter-item:not([data-filter='${selectedFilter}'])`);
+    let itemsToShow = document.querySelectorAll(`.filter-item-container [data-filter='${selectedFilter}']`);
+
+    if (selectedFilter == 'all') {
+		console.log("filter all has been selected")
+      itemsToHide = [];
+      itemsToShow = document.querySelectorAll('.filter-item-container [data-filter]');
+    }
+
+    itemsToHide.forEach(el => {
+	// console.log("some items are hidden");
+      el.classList.add('hide');
+      el.classList.remove('show-flex');
+    });
+
+    itemsToShow.forEach(el => {
+	// console.log("while some items are shown");
+      el.classList.remove('hide');
+      el.classList.add('show-flex'); 
+    });
+
+  });
+});
+
 //Sidebar Quotes
 
 var sidebarText = [
@@ -118,7 +151,7 @@ var sidebarText = [
 	"Remember that people break down, too, not just machinery.",
 	"The purpose of education is to replace an empty mind with an open one.",
 	"It is the mark of an educated mind to be able to entertain a thought without accepting it.",
-	"Blast – Build – Battle",
+	"Blast — Build — Battle",
 	"Rocks in my path? I keep them all. With them I shall build my castle.",
 	"If you see a castle under fog, you must walk there to meet the extraordinary dreams.",
 	"Not all who wander are lost.",
@@ -155,15 +188,6 @@ var sidebarText = [
   ];
   var randomNumber = Math.floor(Math.random() * sidebarText.length);
   document.getElementById("sidebarQuote").innerHTML = sidebarText[randomNumber];
-
-//random anim elements
-
-// var min = 2;
-// var max = 5;
-// var flips = Math.floor(Math.random() * (+max - +min)) + +min; 
-// // console.log(flips);
-// var loadingLine = document.getElementById('headerLine');
-// loadingLine.style.setProperty('--random-flips', flips);
 
 
   
